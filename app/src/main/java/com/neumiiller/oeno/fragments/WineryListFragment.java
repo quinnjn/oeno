@@ -9,6 +9,9 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -82,6 +85,7 @@ public class WineryListFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -90,6 +94,20 @@ public class WineryListFragment extends Fragment {
         ArrayList<Winery> wineries = getWineriesFromFile(activity);
         listAdapter = new WineryListAdapter(activity, wineries);
         listAdapter.updateLocation(getLocation(activity));
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.winerylist, menu);
+        MenuItem mapMenuButton = menu.findItem(R.id.menu_winerylist_map);
+        mapMenuButton.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                mapButtonClicked();
+                return true;
+            }
+        });
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     private Location getLocation(Activity activity){
