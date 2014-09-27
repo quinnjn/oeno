@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -63,6 +65,14 @@ public class WineryListFragment extends Fragment {
 
             return view;
         }
+
+        public void updateLocation(Location location) {
+            for(int i=0; i<getCount(); i++){
+                Winery winery = getItem(i);
+                winery.updateLocation(location);
+            }
+            notifyDataSetChanged();
+        }
     }
 
     private WineryListAdapter listAdapter;
@@ -77,6 +87,13 @@ public class WineryListFragment extends Fragment {
         super.onAttach(activity);
         ArrayList<Winery> wineries = getWineriesFromFile(activity);
         listAdapter = new WineryListAdapter(activity, wineries);
+        listAdapter.updateLocation(getLocation(activity));
+    }
+
+    private Location getLocation(Activity activity){
+        LocationManager locationManager = (LocationManager) activity.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+        Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        return location;
     }
 
     private ArrayList<Winery> getWineriesFromFile(Context context){

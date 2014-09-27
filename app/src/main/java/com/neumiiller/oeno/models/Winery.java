@@ -1,13 +1,17 @@
 package com.neumiiller.oeno.models;
 
-import android.text.TextUtils;
+import android.location.Location;
 
 /**
  * @author QJN on 2014-09-15.
  */
 public class Winery {
     private String name;
-    private Location location;
+    private WineryLocation location;
+
+    private WineryLocation getWineryLocation(){
+        return location;
+    }
 
     public String getCity() {
         return location.getCity();
@@ -17,7 +21,7 @@ public class Winery {
         return location.getDrivingTime();
     }
 
-    public int getDistance() {
+    public String getDistance() {
         return location.getDistance();
     }
 
@@ -30,5 +34,9 @@ public class Winery {
             name = "";
         }
         return name;
+    }
+
+    public void updateLocation(Location location) {
+        getWineryLocation().updateLocation(location);
     }
 }
