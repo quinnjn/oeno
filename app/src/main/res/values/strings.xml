@@ -4,6 +4,7 @@
     <string name="app_name">oeno</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="winery_list_map_string">VIEW WINERIES ON MAP</string>
     <string-array name="drawer_strings">
         <item>Featured Wineries</item>
         <item>\?\?\?\?\? Wineries</item>
