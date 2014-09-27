@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">oeno</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="drawer_strings">
+        <item>Featured Wineries</item>
+        <item>\?\?\?\?\? Wineries</item>
+        <item>Promotions</item>
+        <item>Events</item>
+        <item>oenopass</item>
+    </string-array>
+
+</resources>
