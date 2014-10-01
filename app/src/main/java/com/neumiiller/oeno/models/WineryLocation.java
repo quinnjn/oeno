@@ -1,6 +1,8 @@
 package com.neumiiller.oeno.models;
 
 import android.location.Location;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.text.TextUtils;
 
 import java.text.DecimalFormat;
@@ -8,7 +10,7 @@ import java.text.DecimalFormat;
 /**
  * @author QJN on 2014-09-15.
  */
-public class WineryLocation {
+public class WineryLocation implements Parcelable {
     private String address;
     private String city;
     private String telephone;
@@ -69,4 +71,43 @@ public class WineryLocation {
         String stringPlaceholder = " min drive";
         this.drivingTime = drivingTimeFormatter.format(drivingTimeCeil) + stringPlaceholder;
     }
+
+    protected WineryLocation(Parcel in) {
+        address = in.readString();
+        city = in.readString();
+        telephone = in.readString();
+        latitude = in.readDouble();
+        longitude = in.readDouble();
+        distance = in.readString();
+        drivingTime = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(address);
+        dest.writeString(city);
+        dest.writeString(telephone);
+        dest.writeDouble(latitude);
+        dest.writeDouble(longitude);
+        dest.writeString(distance);
+        dest.writeString(drivingTime);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<WineryLocation> CREATOR = new Parcelable.Creator<WineryLocation>() {
+        @Override
+        public WineryLocation createFromParcel(Parcel in) {
+            return new WineryLocation(in);
+        }
+
+        @Override
+        public WineryLocation[] newArray(int size) {
+            return new WineryLocation[size];
+        }
+    };
 }

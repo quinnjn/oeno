@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -26,6 +27,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.neumiiller.oeno.R;
+import com.neumiiller.oeno.adapters.WineryListAdapter;
 import com.neumiiller.oeno.models.Winery;
 
 import java.io.BufferedReader;
@@ -41,46 +43,13 @@ import java.util.List;
  */
 public class WineryListFragment extends Fragment {
 
-    public static class WineryListAdapter extends ArrayAdapter<Winery>{
-
-        public WineryListAdapter(Context context, List<Winery> objects) {
-            super(context, R.layout.view_winery_list_item, objects);
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            View view = convertView;
-            if(view == null){
-                view = LayoutInflater.from(getContext()).inflate(R.layout.view_winery_list_item, null);
-            }
-
-            Winery winery = getItem(position);
-
-            TextView city = (TextView)view.findViewById(R.id.winery_list_item_city);
-            TextView drivingTime = (TextView) view.findViewById(R.id.winery_list_item_driving_time);
-            TextView distance = (TextView) view.findViewById(R.id.winery_list_item_distance);
-            TextView address = (TextView) view.findViewById(R.id.winery_list_item_address);
-            TextView name = (TextView) view.findViewById(R.id.winery_list_item_name);
-
-            city.setText(winery.getCity());
-            drivingTime.setText(winery.getDrivingTime());
-            distance.setText(""+winery.getDistance());
-            address.setText(winery.getAddress());
-            name.setText(winery.getName());
-
-            return view;
-        }
-
-        public void updateLocation(Location location) {
-            for(int i=0; i<getCount(); i++){
-                Winery winery = getItem(i);
-                winery.updateLocation(location);
-            }
-            notifyDataSetChanged();
-        }
+    public interface WineryListFragmentListener {
+        public void onViewMapButtonClick();
+        public void onWineryClick(Winery winery);
     }
 
     private WineryListAdapter listAdapter;
+    private WineryListFragmentListener wineryListFragmentListener;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -91,9 +60,20 @@ public class WineryListFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+        setWineryListFragmentListener(activity);
         ArrayList<Winery> wineries = getWineriesFromFile(activity);
         listAdapter = new WineryListAdapter(activity, wineries);
         listAdapter.updateLocation(getLocation(activity));
+    }
+
+    private void setWineryListFragmentListener(Activity activity) {
+        this.wineryListFragmentListener = (WineryListFragmentListener)activity;
+    }
+
+    private Location getLocation(Activity activity){
+        LocationManager locationManager = (LocationManager) activity.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+        Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        return location;
     }
 
     @Override
@@ -108,12 +88,6 @@ public class WineryListFragment extends Fragment {
             }
         });
         super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    private Location getLocation(Activity activity){
-        LocationManager locationManager = (LocationManager) activity.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-        Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-        return location;
     }
 
     private ArrayList<Winery> getWineriesFromFile(Context context){
@@ -139,8 +113,8 @@ public class WineryListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_winery_list, container);
-        ListView listView = (ListView) view.findViewById(R.id.list);
+        View view = inflater.inflate(R.layout.fragment_winery_list, null);
+        ListView listView = (ListView) view.findViewById(R.id.winery_list);
         Button viewMapButton = (Button) view.findViewById(R.id.view_wineries_button);
         listView.setAdapter(listAdapter);
         viewMapButton.setOnClickListener(new View.OnClickListener() {
@@ -149,10 +123,17 @@ public class WineryListFragment extends Fragment {
                 mapButtonClicked();
             }
         });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Winery winery = (Winery)parent.getItemAtPosition(position);
+                wineryListFragmentListener.onWineryClick(winery);
+            }
+        });
         return view;
     }
 
     private void mapButtonClicked() {
-        Toast.makeText(getActivity(), "map click", Toast.LENGTH_SHORT).show();
+        wineryListFragmentListener.onViewMapButtonClick();
     }
 }
