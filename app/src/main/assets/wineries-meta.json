@@ -1,0 +1,756 @@
+{
+	"13th Street Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "13th Street Winery is located just outside of St Catharines in Niagara’s Wine Country, just minutes from the QEW. 13th Street is committed to the creation of excellent wines which are an authentic expression of the local terroir and serve as the foundation for the exceptional wine country experience they offer. Our friendly staff welcomes you to stroll the grounds while you enjoy our original art collections, onsite bakery or stay and enjoy a glass of wine on our spectacular outdoor veranda.",
+			"tours": "We do not have tours. We do offer private tastings for groups of six or more. Advance reservations are required.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat": {
+					"open": 1100,
+					"close": 1700
+				},
+				"Sun": {
+					"open": 1100,
+					"close": 1000
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Angels Gate Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "At Angels Gate Winery we produce wines that are honest, consistent and of the highest quality. Guests are welcome to join us on the Beamsville Bench for tastings while overlooking lush vineyards and Lake Ontario. There are more than 25 award winning wines available in our retail boutique. A unique tapas inspired lunch is served seasonally on the Angels Terrace.",
+			"tours": "Tours and group tastings are available by appointment only.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat": {
+					"open": 1000,
+					"close": 1730
+				},
+				"Sun": {
+					"open": 1100,
+					"close": 1730
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Between the Lines Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Gregory and Yannick Wertsch, owners of Between the Lines Winery, may be the youngest winemakers in Niagara on the Lake, but they've already producing exceptional wines far beyond their years’.<br><br>The two brothers are not new to wine, they've been growers in Niagara on the Lake since 1998. Having spent much of their youth running through the vineyards of their grandparent’s farm in Germany, Greg and Yannick were always immersed in the wine culture and now they run one of the hottest new properties in Niagara-on-the-Lake.<br><br>For the lucky visitor to Between the Lines, many of the tours are led by Greg and Yannick, which gives you the opportunity to learn about wine and winemaking directly from the owners. An experience only a few wineries offer!",
+			"tours": "We offer two separate tour options for $10 per person which include a winery tour and three wine samples.<br>Drop-ins welcome during the week, but reservations only on Saturday and Sunday.<br><br><strong>Between the Vines</strong><br>Great grapes make great wine, that’s why the best winemakers are farmers first. In our Between the Vines tasting experience, you’ll head out to the fields to learn the basics of grape growing. Every detail is important, from the soil to the stem. Depending on the season, you might even get to try some grapes straight from the vine! Armed with your new understanding of the growing process, you’ll return to the Big Red Barn to sample the finished product.<br><br><strong>Grape to Glass</strong><br>There’s nowhere to hide at the Big Red Barn. Our wine-making equipment is right there for all to see, because we’re proud of our work and happy to show anyone our process. A lot of effort goes into transforming grape juice into Niagara Region’s best wines, and in this tasting experience you’ll learn about the process right where it happens. By the end of this tasting, you’ll be ready to press your own grapes and start working on your own vintages. But first, we’ll let you try ours.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1900
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Calamus Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Calamus Estate Winery sits adjacent to the Ball’s Falls Conservation area near the scenic town of Jordan Ontario. The winery buildings represent nearly two centuries of local history and charm. The old 1888 dairy barn houses the tasting room and second floor loft space, and the big barn built in the 1820’s now used for wine production. The 42 acre property has a 20 acre ravine for nature hikes or wine themed tours. There are outdoor areas for picnics, and decks for relaxing and viewing the vineyards. No restaurant on site, but catered events can be arranged anytime. Our award wining wines are 100% Ontario VQA, and can be purchased at the winery, restaurants, mail order or LCBO.",
+			"tours": "As a small family winery we have no regular scheduled tours, but can book groups anytime for tastings and winery tours. In our second floor loft space we host weddings, rehearsal dinners, corporate events, cooking classes, live music and in the upper deck observatory, telescope nights.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1730
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Cattail Creek Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "When our grandfather planted his first vines in 1956, a love of farming spanning four generations took root. Today, those vines, combined with that passion, have grown into Cattail Creek Estate Winery. Our collection of vineyards in Niagara on the Lake produces grapes of the highest quality for our hand crafted wines.<br><br>Within our portfolio of wines we are sure there is something that will tempt your palate. From our whimsical and versatile Cat Series dedicated to our charitable work supporting cat-focussed charities throughout Ontario, to our Cattail Creek Series which highlights the wines for which we have developed a reputation of quality and value. Also within our portfolio is our Estate Series which feature the wines made exclusively from our vineyards thereby truly representing the characteristics unique to Cattail Creek Estate Winery and finally our Small Lot Series which is our winemaker’s playground...the wines in this series are truly once-in-a-lifetime wines.<br><br>In our short history as winemakers in Niagara on the Lake, our wines have garnered some exciting honours. In fact, Cattail Creek was one of the first wineries to win Best Limited Edition Sweet Wine at the highly acclaimed Cuvée Wine Awards for one of our first wines made, the Barrel Fermented Vidal Icewine 2006. The following year, we returned to the Cuvée Wine Awards once again, this time having our Barrel Fermented Chardonnay 2007 win Best Limited Edition White Wine in Ontario. And recently, our Reserve Cabernet Merlot 2007 won Red Wine of the Year at the Ontario Wine Awards. We are proud to have won such significant awards for each category of wine that we make. It shows that our dedication to excellence in both the vineyards and in winemaking is truly making great wines.<br><br>The winery boutique and tasting bar at Cattail Creek Estate Winery is open throughout the year. Here you can come by and have our team members guide you through a tasting of our wines and browse through our unique selection of wine inspired gifts. Often you’ll see our winemaker busy making our wines, people working in our vineyards and meet a member of the family passing through. And while you are here, don’t forget to enjoy a Picnic in the Vineyard while sipping a glass of wine at our picnic tables surrounded by our vineyards. Or ask for one of our blankets and trek into the heart of the vineyard and enjoy your basket and wine nestled amongst the vines. Each basket contains an assortment of meats (chosen from our selection), cheeses (chosen from our selection), antipasti, hummus and a freshly baked baguette with Mom’s home baked cookies. Choose a glass of your favourite wine to pair with your basket or allow one of our Team Members to make a recommendation. for a Picnic in the Vineyard.",
+			"tours": "By appointment only.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Cave Spring Cellars": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "“The house that Riesling built,” Cave Spring Cellars stands at the centre of the picturesque village of Jordan, though its vineyards are a few kilometres west on the Beamsville Bench. The Pennachetti family grasped the potential of these limestone-based soils in the mid-‘70s, and now express the <em>terroir</em> in their premium, mature-vine CSV and Estate wines. Nine Riesling styles by veteran winemaker Angelo Pavan – from sparkling to brilliant Icewine – are elegant and exemplary, and Chardonnay also excels. Taut Pinot Noir, Gamay and Cabernet Franc embrace the cool-climate spirit of Niagara reds. Enjoy the full range, including older vintages, while dining at the winery's Inn On the Twenty, browse the village's shops and slip away for a night at the elegant Inn.",
+			"tours": "Public tours are daily at 1:30pm ($5.00 per person).<br><br>Private tours are available by appointment. Minimum six guests. Cave Spring Uncorked; Wine and Food Adventure; Sparkling and Sweet; Wine and Cheese Match-Up",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Coyote's Run Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Coyote's Run is a small winery located in the village of St. David's just outside of Niagara on the Lake. We are passionate about great wine and dedicated to producing wines of quality and distinctiveness that reflect our unique terroir and microclimate. All of our wines are hand-crafted in small batches to ensure that the end product is the highest possible quality. They are all certified by the Vintners Quality Alliance (VQA), the symbol of quality for some of the finest wines produced in Ontario, and all of the fruit is 100% Niagara grown.",
+			"tours": "Tours are available by appointment only.\n\nPlease email retail@coyotesrunwinery.com or call us using extension 222.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Creekside Estate Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Creekside Estate winery is a quality obsessed winery on the Niagara Peninsula who believe that 'serious' wines can only be made with a generous pinch of experimentation and creativity. The winery has been doing its premium thing since 1998 crafting unique varietals such as Sauvignon Blanc, Shiraz, Viognier, Pinot Grigio, and Cabernet Sauvignon. Visit us at our winery in Jordan and appreciate extraordinary VQA wine or shop on-line at www.creeksidewine.com",
+			"tours": "Available year-round by appointment only.<br><br><strong>Estate Tours</strong><br>Includes a guided tour of the facility followed by a tutored tasting of 4 Estate wines. $5.00 per person.<br><br><strong>Reserve Tours</strong><br>Includes a guided tour of the winery followed by a tutored tasting of 2 Estate wines, 2 Reserve wines and 1 Icewine. $9 per person<br><br><strong>Weekend Lunches</strong><br>Available on the deck:<br>Mid-May to Early October, Saturdays and Sundays.<br>11:30 – 3:30pm.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"De Sousa Wine Cellars": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "A short trip up the Niagara Escarpment will take you a world away at De Sousa Wine Cellars. The estate winery is surrounded by lush vineyards, gardens and groves of trees. Guests can relax with a glass of wine enjoyed with a cheese plate during the summer months on our winery patio. Picnic lunches welcome.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Diamond Estates": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "At our state-of-the-art winemaking facility we craft wines sourced from specifically chosen and carefully managed vineyards from one of our 25 grape grower partners within Niagara. Diamond Estates is home to a wide selection of top selling VQA Ontario wines including: 20 Bees, FRESH, NHL Alumni Wines Hat Trick, Lakeview Cellars, EastDell and Canadian acting legend, Dan Aykroyd’s line of wines. The winery produces a full range of red, white and rosé table wines, Icewine and other dessert wines.<br><br>Our Wine Boutique is open daily year round and features a selection of products for sampling at the bar from our wide range of brands. Join us year round for our Cellar Floor Experience – a 1000 sq. foot tour space right in the heart of our working winery! Sip wines amongst 2 storey wine tanks and an ocean of over 800 wine barrels.",
+			"tours": "Our Cellar Floor Experience Tours are available Daily at 12pm and 2pm (Winter by appointment only)",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Di Profio Wines": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "This is one of the newest and smallest wineries in the Niagara Peninsula. The 12 acre site features eight grape varieties, a unique cube shaped, three floor winery with The Zinc Wine Bar and retail boutique and Among the Vines B & B. Its crops are hand picked, double hand sorted and gravity flow processed for maximum quality. In the past three years Di Profio Wines has accumulated 25 awards under the care of winemaker, Fred Di Profio.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Featherstone Estate": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "Featherstone Estate Winery is located on 23 acres of rolling hills on the prestigious upper Twenty Mile Bench along the Niagara Escarpment in Ontario, Canada.<br><br>Rich clay soils and higher elevations create a unique mesoclimate for growing grapes. We are an insecticide-free farm, dedicated to making small batches of quality wine from the grapes we grow ourselves. This control enables us to ensure excellence at every step from vine to bottle. Cheers!",
+			"tours": "",
+			"hours": {
+				"Thu,Fri,Sat,Sun,Mon": {
+					"open": 1100,
+					"close": 1730
+				},
+				"Tue,Wed": {
+					"open": 1100,
+					"close": 1000
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Fielding Estate Winery": {
+		"priority": 10,
+		"participating": false,
+		"details": {
+			"overview": "Our Wine Lodge pays tribute to Northern Ontario’s cottage country, crafted from cedar, stone and glass with a breathtaking view of Toronto across Lake Ontario. Inside you will discover our award-winning wines, meet our passionate team and share our excitement for winemaking. Most of our wines are only available at the winery or select restaurants.<br>We invite you to visit our winery year-round to tour and taste or participate in one of our special events.",
+			"tours": "By appointment. $10pp includes tasting and a $5 voucher to be used towards the purchase of wine.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Flat Rock Cellars": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Since opening Flat Rock in 2005, Ed Madronich has injected fun and enthusiasm into both the wine and the winery experience. This is reflected in the tours, which are not typical and give many different options and ways to taste and interact with Ed, winemakers and staff, both in the vineyard and winery. The five-level gravity-fed winery sits atop the escarpment with an incredible 360° view of 80 scenic acres of vineyards and Lake Ontario. Expect off-beat names for the wines like the crowd-pleasing white blend – Twisted, Rusty Shed Chardonnay and Riddled sparkling – a traditional method sparkling. There is also the one-off Rogue series that challenges tradition and tickles your tastebuds, but don’t let this whimsy fool you – Flat Rock Cellars’ wines are much-awarded and critically acclaimed.",
+			"tours": "Tours are available by request.",
+			"hours": {
+				"Sun,Mon,Tue,Wed,Thu,Fri": {
+					"open": 1000,
+					"close": 1800
+				},
+				"Sat": {
+					"open": 1000,
+					"close": 1900
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Frogpond Farm Organic Winery": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "At Frogpond Farm we do not use insecticides, herbicides, synthetic fungicides or chemical fertilizers. All our wines are organically grown, processed and certified by Organic Crop Producers &amp; Processors. The light and the warmth of the sun manifest itself in the sweetness of the grapes allowing our wines to develop spirit, flavour and colour. All grapes are hand-picked and crafted into lively genuine wines using only gentle traditional winemaking techniques. Rainwater caught in our pond provides a habitat for a great number of species that add to the biodiversity of our family farm. Harmony in nature provides a balanced environment for a healthy vineyard to flourish, the prerequisite for a great authentic wine.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Good Earth Food and Wine Co.": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Welcome to The Good Earth Food & Wine Co., Nicolette Novak’s haven for food and wine lovers in Beamsville. Located on a bucolic 55-acre farm, The Good Earth is one of Niagara’s favourite culinary destinations. From our recreational cooking school, to our winery and bistro, The Good Earth offers visitors a fresh, inspired, and unpretentious food and wine experience in a beautiful pastoral setting. From wine tastings to cooking classes to casual dining in our bistro or patio, to special events — The Good Earth offers something for everyone.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Henry of Pelham Family Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "As a family owned and operated winery, we are dedicated to producing wines grown from the distinctive soils and climate of the Niagara Peninsula and most specifically the famous and well regarded Short Hills Bench. We are fiercely committed to consistently growing and making only the finest wines by focusing on constant improvements in our vineyards and winery, low yields and wines that have true elegance, finesse and age ability.",
+			"tours": "1:30 pm daily, $10 per person.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Hernder Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "A quiet country road, the gentle swell of vineyards beneath the brow of the Niagara Escarpment; turn down the lane, through a unique wooden covered bridge up to an immense, perfectly restored 1867 Victorian barn. Hernder Estate Wines is a family owned business that has been around since September of 1993 producing award winning VQA wines at reasonable prices. Hernder's also houses two banquet rooms that are fully licensed and has a full commercial kitchen for that special function or corporate dinner. Getting married? Hernder's is Niagara #1 wedding winery where you can get married, get your photos amongst Hernder's gorgeous grounds while your guests are on a wine tour before they are brought to their reception room.",
+			"tours": "Free Public Tours on Saturday and Sundays at 1pm.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Inniskillin Wines": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Experience one of Canada's oldest and most prestigious wineries. Inniskillin was the first winery to receive a winery license after prohibition. We have received international acclaim from winning the Grand Prix d'Honneur and were instrumental in developing Canada's VQA system. Inniskillin has always been synonymous with innovation and discovery. Join us at the estate winery for tours, tastings, and a bite to eat (please note food options are only available during the summer season). Visit greatestatesniagara.com for a full listing of events happening at Inniskillin winery.",
+			"tours": "Tour times and availability are limited and first-come, first-served. Reservations are not required, but are recommended during peak times to ensure your place on the tour.<br><br>Summer Public Tours (June-September) Daily, Every hour on the half hour from 10:30 through 4:30 pm<br><br>Winter Public Tours (October – May) Sunday-Friday, three tours daily at 10:30, 12:30, and 2:30. Saturday, every hour on the half hour from 10:30 – 4:30 pm",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Jackson-Triggs Niagara Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Jackson-Triggs is a name you know. It’s a name your friends know. It’s a name that stands for our commitment to crafting the perfect wine for any occasion, and our attention to detail shows. We are Canada’s most awarded winery and have been named “Best Canadian Winery” an unprecedented number of times in international and domestic competitions. Join as at the estate winery for tours, tastings, concerts, and a bite to eat (please note food options are only available during the summer season). Visit greatestatesniagara.com for a full listing of events happening at Jackson-Triggs winery.",
+			"tours": "Tour times and availability are limited and first-come, first-served. Reservations are not required, but are recommended during peak times to ensure your place on the tour.<br><br>Summer Public Tours (June-September) Daily, every hour on the half hour from 10:30 through 4:30 pm<br><br>Winter Public Tours (October – May) Sunday-Friday, three tours daily at 10:30, 12:30, and 2:30. Saturday, every hour on the half hour from 10:30 – 4:30 pm",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1830
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Konzelmann Estate": {
+		"priority": 100,
+		"participating": true,
+		"details": {
+			"overview": "Konzelmann Estate Winery is situated on the south shore of Lake Ontario in one of Canada's premier wine regions, Niagara-on-the-Lake. It is owned and operated by Herbert and Gudrun Konzelmann, who made Canada their home in 1984. For over a century there has been a winery in the Konzelmann family. Expertise, techniques and most importantly, the passion to ensure that the job is done well has been handed down through six generations.<br><br>Join us at 'The Konzelmann Winery Boutique and Tasting Bar', and discover why we are heralded for providing one of the most friendly, informative and educational experiences in Niagara's wine country. All year round we offer a wide variety of over 30 different VQA wines for tasting and purchase. Experience the history and craftsmanship yourself with a bottle from Konzelmann, or a memorable visit to the winery!",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Lailey Vineyard": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Alongside the Niagara River and tucked off the Niagara Parkway, the well-kept, herbicide-free, nine-hectare Lailey Vineyard has long been known for producing some of Niagara’s sturdiest, deepest and most highly awarded reds. Veteran winemaker Derek Barnett excels with Pinot Noir, Syrah, Chardonnay, made in a compact, complex style for enjoying at the table, and often benefiting from bottle aging. The small winery is an ideal stop for intimate tastings and special events.",
+			"tours": "By appointment only.",
+			"hours": {
+				"Sun": {
+					"open": 1100,
+					"close": 1700
+				},
+				"Mon,Tue,Wed,Thu,Fri,Sat": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Legends Estates": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Legends Estates Winery is a Lakefront Vineyard Property that produces estate- grown grapes. We offer a large portfolio of exceptional quality VQA wines which consist of some unique varietals such as Malbec, Semillon and Petite Verdot. This third-generation, family-owned estate, also provides memorial experiences on our beautiful property including weddings, special events and corporate functions.",
+			"tours": "<strong>The Legendary Tour and Tasting</strong><br>Enjoy a behind-the-scenes walking tour of our winemaking facility, exploring the production process at Legends Estates. Your tour is complemented by a structured tasting of our premium and award-winning VQA wines.<br><br><strong>The Cheesy Tour</strong><br>This tour package involves pairing our signature VQA wines and a selection of artisanal cheeses, and is designed to enhance your wine tasting and entertaining experience.<br><br><strong>The Sweet Tour</strong><br>This tour package includes a tutored tasting of our award-winning wines paired to perfection with a selection of chocolate confections. You will be pleasantly surprised to learn how well wines pair with chocolate!<br><br><strong>The Martini Tour</strong><br>Impress the socks off your guests with this one! A must for the entertaining aficionado!<br>Enjoy our fabulous Icewine and Fruit Wine Martinis following a tour of our winemaking facility and cellars. This tour takes you from the tanks to the barrel room and ends with a shakin’ & stirrin’ tasting experience! Perfect for a girls’ day out or corporate retreat.<br><br><strong>Our Most Popular Group Tour! The Lunch n’ Tour</strong><br>Enjoy your lunch on the shores of Lake Ontario at Niagara’s #1 Lakefront Winery<br>Enjoy a behind-the-scenes tour of our winemaking facility, complemented by a tutored tasting of our award-winning VQA wines. Following your tasting, enjoy a picnic-style lunch among our picturesque setting of vineyards and orchard with the Toronto skyline gleaming across the lake... Pair your lunch with one of our signature wines, available to purchase by the bottle and by the glass.<br><br><strong>Advance Reservations are required for all Tour & Tasting Packages. Tours are available year round, seven days a week, based on availability.</strong>",
+			"hours": {
+				"Sun": {
+					"open": 1100,
+					"close": 1700
+				},
+				"Mon,Tue,Wed,Thu,Fri,Sat": {
+					"open": 1000,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Malivoire Wine Company": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Since planting its first vineyard in 1996, Malivoire has pioneered an innovative, eco-centric approach to wine growing on the Beamsville Bench in the Niagara Peninsula.<br><br>We talk a lot about \"elements\" here. To build a successful winery you have to start with the best of the basics: location, soil, vines, practices and infrastructure. Then comes the intangibles: philosophy, objectives, reason, creativity, dedication and energy. These come from people.<br><br>In the vineyard, we use of the most eco-friendly practices possible within the limits imposed by the growing season. Original plantings of Pinot Gris, Chardonnay, Gewurztraminer, Gamay and Pinot Noir were supplemented in the following years by additional vinifera varieties.",
+			"tours": "By appointment only; Available 7 days a week (with exceptions during harvest); $10/person. See website for more details.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Marynissen Estates": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Marynissen Estates has its roots deeply embedded in the soil of Niagara-on-the-lake. Located in the four mile creek sub appellation at the base of the escarpment the estate is home to the oldest commercial planting of Cabernet Sauvignon in Canada. The property was purchased in 1953 by viticulture pioneer John Marynissen and his wife Adrianna (Nanny). AS there was an existing vineyard on the lot, they started growing their own grapes and in 1975, they began planting vinifera varieties, Chardonnay, Gewurztraminer, Riesling, Merlot and Gamay Noir.<br><br>John Marynissen was one of the first to plant vinifera grapes, when many people said it couldn’t be done. The vines survived and he proved that our microclimate could create outstanding wines. Cabernet Sauvignon was planted in 1978 and the Marynissen family spent decades watching over the vines, hand farming and harvesting. Sadly John passed away in January 2009, but his legacy and vision for the winery remains intact.<br><br>The vineyards rich history was born out of a strong devotion to the land, pioneering spirit and passion for excellence. Carrying on the tradition and art of exceptional winemaking is multi award winning winemaker Gordon Robert, who joined the estate in autumn 2013. Gordon has worked with notable wineries around the world and his style is a mixture of old world techniques with a fresh and modern approach.",
+			"tours": "Daily tours, large groups by appointment.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Megalomaniac Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Megalomaniac is Niagara's 'must-visit' winery.<br>The picturesque location offers truly unique terroir for the vines.<br>Carefully capitalizing on that terroir results in exceptional wines of great character.<br>The Megalomaniac Winery allows guests to enjoy the wines in an amazing environment, surrounded by a panoramic view of the entire Niagara wine region.",
+			"tours": "Daily tours at 12:00pm and 3:00pm (reservations strongly encouraged). $10 per person.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Palatine Hills Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "",
+			"tours": "Tours are available by appointment.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Peller Estates": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Our winery is a special place, where Winemaker Katie Dickieson and Winery Chef and personality Jason Parsons work together to create Canada's most innovative wine and food experiences. It’s a place where people come to awaken their palate by celebrating and learning about the many nuances of wine: growing and tasting, pairing and serving, buying and cellaring.",
+			"tours": "<strong>Winemaking Excellence Tour</strong><br>If touring Wine Country is a new experience for you, this tour and tasting is a great introduction to our three generations of winemaking excellence and founder Andrew Peller's belief in producing food focused wines that awaken the palate. While touring the property and tasting three Peller Estates wines, learn how we live this philosophy everyday. Redeem your Tour Receipt and receive $5 towards any wine purchase.<br><strong>$10 per person.</strong><br><br><strong>Estate Reds - Our Vineyard Story</strong><br>Taste among our Cabernet Sauvignon, Cabernet Franc and Merlot vines and experience the difference in these 3 noble varietals. Learn how our Winemaker tends the vineyards to produce powerful red wines of great structure and intensity.<br><strong>$15 per person.</strong><br><br><strong>Chicks and Chocolate</strong><br>Chocolate + Wine = Quite possibly the world's perfect pairing. Even if you ignore our 'Wine Country math' you can't ignore the irresistible lure of wine paired with chocolate. During this lively experience, learn how wine and chocolate complement each other and how they can be paired to awaken your palate.<br><strong>$15 per person.</strong><br><br><strong>The Estate Room</strong><br>This is the ideal setting for the collector who is looking to add to their wine cellar. This space provides an exclusive environment to enjoy Peller Estates' very best wines. Our team of Wine Consultants can answer your questions and help you with your buying selections. The Estate Room features back vintage library wines and bottles that are only available at the winery. Browse our selection of crystal stemware, decanters and accessories.<br><strong>$10 per person.</strong><br><br><strong>Art of Wine &amp; Food</strong><br>Bon vivants already know that wine and food need each other. This interactive experience will awaken your palate with three wines and three food items selected by Winery Chef and CityLine personality Jason Parsons. Learn how the traits of food and wine pairing...<br><strong>$20 per person.</strong><br><br><strong>Beyond the Bottle</strong><br>What kind of glass should I use to drink my favourite red wine? How do I use the decanter that’s been sitting in my cupboard collecting dust? Why does this Riesling taste like candied lemon? Join us on this interactive and informative experience that answers all of these questions and more about stemware, decanting and the wine questions you’re too afraid to ask.<br><strong>$15 per person.</strong><br><br><strong>Icewine &amp; Cuisine</strong><br>During this lively and interactive experience you will sample four Icewines and four food items, demonstrating the basic principles of pairing Icewine and cuisine. You will not only learn how to perfectly pair Icewine with cuisine, but explore how Icewine can be used in food preparation; a technique used daily by Chef Jason Parsons.<br><strong>$25 per person.</strong>",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 2100
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Peninsula Ridge Estates": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "West Niagara's leading wine and culinary destination, Peninsula Ridge is the perfect \"first and last stop\" when touring the Niagara region. World renowned for producing racy yet rich Sauvignon Blanc, brilliant Chardonnay, sensational Bordeaux reds and spicy, focused Syrah, Peninsula Ridge beckons with its grand Queen Anne Revival Victorian Mansion (which houses its relaxed fine dining restaurant) and the stunning views of Lake Ontario and the Toronto skyline.",
+			"tours": "Tours are available at 11:30 am June to October or by appointment.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Pillitteri Estates": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "Pillitteri Estates Winery proudly continues a family tradition of viticulture and winemaking excellence. For Gary Pillitteri, the opening of Pillitteri Estates Winery in June of 1993 was the culmination of a lifetime dream. Since arriving in Canada from his native Sicily in 1948, Mr. Pillitteri was able to achieve his life long dream of opening a winery using his many years of experience as a grape grower in Niagara and as an amateur winemaker.<br><br>Pillitteri Estates Winery is truly a family enterprise: Gary’s son Charles is C.E.O. President of Sales, daughter Connie is C.F.O. President of Operations, daughter Lucy is C.M.O. President of Marketing and son-in-law Jamie Slingerland is the Director of Viticulture.<br><br>The grapes are harvested primarily from the family’s 100 acres of vineyards, planted with <em>vitis vinifera</em> and French Hybrid grape varieties. Following the exacting standards of the VQA (Vintner’s Quality Alliance) production has increased steadily since the winery’s opening, and currently stands at roughly 90 000 cases.<br><br>The family’s winemaking philosophy is quite simple: “To produce the finest wines possible from the highest quality Niagara Peninsula grapes.” The strategy, however, is much more complex. Each vineyard and wine is treated individually since each has its own ‘personality’ that must be expressed. “Our goal is to produce consistent, quality wine for our consumers: rich, full-bodied reds; fragrant and lively whites; and luscious Icewines, all in a variety of styles to suit every palate.”<br><br>This approach has earned Pillitteri Estates Winery a reputation for excellence. In the past twenty years the winery has been honoured with more than 650 medals, at both domestic and international competitions. These include the coveted <em>Civart Trophy</em> from the <em>Challenge International du Vin</em>, in Bordeaux, France, two <em>Gran Medaillo d’Oro</em> from Vinitaly, Verona, Italy and a rare Double Gold Medal from the <em>American Wine Society</em> in the United States. Pillitteri achieved international acclaim in 2005 by winning North America’s only medal at <em>Effervescents du Monde</em> in addition to receiving a rare Grand Gold. More recently Pillitteri won a Grand Gold and First Place in the World at the <em>Effervescents du Monde</em> for the 2009 Sparkling Cabernet Icewine. The Exclamation Reserve wines have continued the proud tradition of producing award winning wines by winning Gold at <em>Challenge International du Vin, International Wine Challenge</em>, and the <em>International Wine and Spirit Competition</em>.<br><br>From Gary’s first Gold Medal to the winery’s most recent honours, Icewine continues to be the Pillitteri flagship wine. In fact, Pillitteri Estates Winery is the largest estate producer of Icewine in the world and one of the most innovative, creating a wide variety of Icewines, using: Vidal, Riesling, Gewürztraminer, Chardonnay, Cabernets, Shiraz, Merlot, Sangiovese and Semillon varietals. Pillitteri Icewine is exported to more than thirty countries worldwide. The family’s commitment to producing VQA wines of exceptional quality and character is demonstrated in each bottle bearing the Pillitteri name. Pillitteri Estates Winery is your Icewine destination!",
+			"tours": "Tours are provided daily at 12pm, 2pm, and 3pm.\n\nTasting room guests are treated to complimentary sampling of our table wines, with a small additional fee if Icewine tasting is requested (refunded upon Icewine purchase).",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 2000
+				}
+			},
+			"contact": ""
+		}
+	},
+	"PondView Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "One of the newest additions to the Four Mile Creek sub-appellation, PondView Estate Winery is a quaint, family-owned winery operated by Lou and Adriana Puglisi and backed by three generations of grape growing. Lou’s father and grandfather were grape growers in Italy. Not surprisingly, PondView has a Mediterranean ambiance, which includes antipasto and cheese platters at the tasting bar or on the patio. All wines are made from estate-grown grapes including Riesling, Pinot Grigio, Cabernet Franc, Cabernet Sauvignon and Chardonnay. We are known for fresh, fruity and crisp whites; but also for big, bold, full bodied reds. Our wines have won numerous medals and awards both nationally and internationally. The winery may be new, but the family has been growing grapes here since 1974; in fact, Lou was named 2008 Grape King, a Ministry of Agriculture award for having the finest vineyard in Ontario.",
+			"tours": "We offer public tours between June and October everyday at 1:00 pm or by special appointment. Pricing is $5.00 per person.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Ravine Vineyard": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "We believe Ravine is truly unique; perhaps it’s because of our approach to family. Our goal was to create a sustainable way to maintain our 100+ year-old farm and continue to foster the legacy of our family upon it. For five generations the Lowrey family has grown grapes in the soil of one of the oldest commercial vineyards in the area. The result is not only great wines, but also a wonderful lifestyle that we are proud to share.<br><br>We are among the few self-standing winery restaurants that bake our own bread, raise our own pigs, and grow our own certified organic vegetables while pairing our meals with the discriminating palate of a winemaker. We are blessed with a renowned culinary team that chooses an ever-changing menu while preserving as much as possible. Ravine is a place steeped in time and heritage so we welcome you to visit and ponder the rich history of the terroir while enjoying a glass of wine on the patio.<br><br><strong>Ravine Vineyard Estate Winery Restauraunt</strong><br>Monday to Sunday:<br>Lunch 11:00 am — 3:00 pm<br>Dinner 5:00 pm — 9:00 pm",
+			"tours": "<strong>Historic/Harvest tour</strong>: 11:00 am Daily — <strong>$10</strong><br><strong>Organic tour</strong>: 12:00 pm <em>weekends only</em> — <strong>$15</strong><br><strong>Cheese tour</strong>: 1:00 pm <em>weekends only</em> — <strong>$25</strong><br><strong>Winemaking tour</strong>: 4:00 pm daily — <strong>$10</strong>",
+			"hours": {
+				"Sun,Mon,Tue,Wed,Thu": {
+					"open": 1000,
+					"close": 1800
+				},
+				"Fri,Sat": {
+					"open": 1000,
+					"close": 2000
+				}
+			},
+			"contact": "For Private/Corporate tour bookings, please call us using extension 29."
+		}
+	},
+	"Reif Estate": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "One of Niagara-on-the-Lake’s founding family wineries, founded in 1982 by Ewald Reif and later acquired by nephew Klaus W. Reif. Today, Reif produces wines from their vineyard first planted in 1977. The winery boasts one of the most sophisticated, educational tasting room experiences in Niagara, complete with themed flights, blind tastings, food pairings and a sensory wine garden.",
+			"tours": "Tours available year-round.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Riverview Cellars": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "This small family winery began converting their 25 acre Niagara River orchard into a vineyard in the early 1990’s, and opened Riverview in 2000. Since then, Riverview has cultivated a reputation for offering a hospitable experience featuring a range of small-batch high quality wines for every palate. Notable wines include the Salvatore’s Reserve Cabernet Sauvignon and Cabernet Franc as well as Gewurztraminer. The tasting bar also offers unique varietals for Ontario like Malbec and Syrah that are sure to please.",
+			"tours": "By appointment only (call or place on our website).",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Silversmith Brewing Company": {
+		"standard": false,
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "We have built a beer oasis deep in the hart of Ontario wine country. We specialize fresh, small batch brews. We find our inspiration in the classic beer cultures of the Old World & embrace the creativity of the newest generation of Brew Masters. Relax in great company, enjoy a pint of our award winning wares.",
+			"tours": "",
+			"hours": {
+				"Sun,Mon,Tue,Wed,Thu": {
+					"open": 1200,
+					"close": 1900
+				},
+				"Fri,Sat": {
+					"open": 1200,
+					"close": 2300
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Small Talk Vineyards": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Small Talk Vineyards feature bold fresh VQA wines that expose the dramatic gap between what you say,...and what you think! Celebrating the chitchat that surrounds a typical dinner party the wines are certain to cause a stir and spark great conversation!",
+			"tours": "Wagon tours of the property are $8 and are by appointment.<br>Self-guided walking tours are available during winery hours.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Southbrook Vineyards": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "Southbrook’s harmonious relationship to the land is passionately revealed through every aspect of our operations, and in the quality of our wines. Our LEED® Gold-certified hospitality building celebrates the vines that surround it. But the full expression of Southbrook’s philosophy is our biodynamic, organic vineyard and winery. From these, Southbrook produces fine age-worthy wines, most notably Cabernet Sauvignon, classic Bordeaux blends and Chardonnays.",
+			"tours": "<strong>10am — Southbrook: We Hardly Knew Ye</strong><br>Start your day off right. From our humble beginnings in Northern Toronto, to being leaders in the organic and biodynamic grape growing community of Canada, come on a journey with us and learn the rich history of Southbrook.<br>One of our highly trained Wine Lovers will tour you through our state of the art, LEED Gold Certified Hospitality Pavilion while you learn the story of our award-winning winery. We can’t wait to tell you why we decided on a wall in the vineyard, and how our industry-renowned Framboise came to be!<br><em>*OPEN TO THE PUBLIC. $5 per person. Includes two tastings. Advance booking recommended. Approximate run-time: 20-30 minutes.</em><br><br><strong>11am — A Southbrook Structured Tasting</strong><br>Everybody has been to a restaurant, ordered a nice bottle of wine, and then had a snobby server pour 1oz into their glass to inspect. This server is expecting you to take a few steps before you blindly accept that bottle of wine. Instead of panicking next time this happens, be prepared with the proper steps.<br>The knowledgeable staff at Southbrook will walk you through the proper steps of a structured tasting in a fun and informative environment that will help get anyone started on their way to becoming a master sommelier...or at least impressing their friends. Tasting and enjoying wine doesn’t have to be an arduous task, come let Southbrook teach you.<br><em>*OPEN TO THE PUBLIC. $10 per person. Includes four tastings (one tasting to be fruit/specialty). Advanced booking recommended. Approximate run-time: 20-30 minutes.</em><br><br><strong>12pm — Can You Say Cheese? ($12 per person)</strong><br>At 12pm each weekend, things are going to get cheesy at Southbrook. Book one of our lavish cheese pairings and experience a breathtaking expression of fine wine paired with delicious cheese.<br>You will be seated at our Oak table in the picturesque Oak Room while a Wine Lover informs you why certain cheeses pair with certain wines, in addition to general food and wine pairing information. We know we enjoy pairing wine with the cheeses; we want you to enjoy them too!<br>Perfect for a group touring in the area!<br><em>*OPEN TO THE PUBLIC. $12 per person. Bookings required 48 hours before requested time. Pairing includes four wines and three samples of cheese. Approximate run-time: 30-35 minutes.<br>**NOTE: Cheese pairings can be booked from 10 am-11:45 am & 2:15 pm-5 pm every weekend at the price of $15 per person. Bookings required 48 hours before requested time.</em><br><br><strong>2pm — Earthly Infused Food Pairings ($25 per person)</strong><br>Southbrook is a lean, green, organic & biodynamic certified grape growing machine!<br>As one of the leaders in Canada’s organic and biodynamic movement, allow Southbrook to share with you exactly what organic and biodynamic farming is, and how we apply it to our grapes.<br>While you enjoy some crisp, delicious wine, one of our Wine Lovers will walk you around the property, explaining the organic and biodynamic practices we use year around. You may even get lucky and see some of the sheep! Join us in our hospitality pavilion after for some Earthly Infused food from The Yellow Pear, paired with Southbrook wine!<br><em>*OPEN TO THE PUBLIC. $25 per person. Includes three tastings, paired with three foods. Advanced bookings recommended. Approximate run-time 35-45 minutes.<br>**Weather Permitting, parts of the tour will take place outdoors, dress and apply sunscreen accordingly.</em><br><br><strong>Picnic Along the Vines ($35 per person)</strong><br>Do we really need to explain this one? Available in baskets of two, four, and eight, visit Southbrook to share a wonderful basket lunch, with fresh meats and cheeses. Also includes a glass of wine.<br>Come sit out amongst our breathtaking vines, have a laugh, and create a memorable experience you will never forget.<br><em>*OPEN TO THE PUBLIC. MUST BOOK 48 HOURS IN ADVANCE.<br>**Please alert Southbrook of any food allergies (gluten included) 48 hours prior to your arrival.</em>",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Strewn Winery": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "Established 17 years ago, Strewn produces well-crafted, food-friendly wines that reflect the Niagara ‘terroir’. The property, originally a fruit cannery, has taken on a second life as a winery, Canada’s first winery cooking school with hands-on classes for recreational cooks, and a casual fine-dining restaurant. More than 30 VQA wines are offered for sale, many available only through the winery retail boutique or online store. The Strewn wine portfolio includes structured, age-worthy reds using Cabernet Sauvignon, Cabernet Franc and Merlot, refreshing whites and award-winning Icewines.",
+			"tours": "Free public tours and tastings are daily at 11:30am.<br>Private and group tours are available by appointment.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": "Cathy Royston, Hospitality Manager"
+		}
+	},
+	"Sue-Ann Staff Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Welcome to Sue-Ann Staff Estate Winery, a small, quality oriented winery on the family's 200 year old estate, on the brow of the Niagara Escarpment in Jordan, Ontario, Canada. It is the ultimate assemblage, blending over 100 years of the family's grape growing experience with 15 years of Sue-Ann's award winning winemaking. After opening in 2009, it has been a whirlwind of ultimate experiences. Enjoy!",
+			"tours": "",
+			"hours": {
+				"Thu,Fri,Sat,Sun,Mon,Tue": {
+					"open": 1100,
+					"close": 1700
+				},
+				"Wed": {
+					"open": 1100,
+					"close": 1000
+				}
+			},
+			"contact": "Cathy Royston, Hospitality Manager"
+		}
+	},
+	"Sunnybrook Farm Estate": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Founded in 1993, Sunnybrook is Canada’s original fruit winery and the only in Niagara that specializes in producing wines exclusively from tree-fruits and berries. Cider lovers will also enjoy award winning hard ciders made from special blends of locally picked apples. Come for an intimate experience at our friendly tasting bar and enjoy the unique orchard country environment.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"The Foreign Affair Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "The Foreign Affair Winery is a boutique winery specializing in rich and full bodied wines utilizing the appassimento grape drying process (amarone style). Recipient of the Premier's Award for Agri-Food Innovation; Foreign Affair was the first Canadian winery to produce all of it's wines appassimento style. Proprietors, Len and Marisa Crispino, and Louis Cimicata, welcome you to visit their old world tasting room on the grounds of the Vineland Research and Innovation Centre.",
+			"tours": "By appointment only.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1700
+				}
+			},
+			"contact": ""
+		}
+	},
+	"The Ice House Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "The Ice House Winery holds a unique position in the wineries of Niagara-on-the-Lake. It is the only winery that exclusively makes Icewine. That’s right. This winery is totally dedicated to making and perfecting, “Canada’s liquid gold.” Winemaker, Jamie Macfarlane is committed to creating the highest quality Icewine in the world and is the proud recipient of 3 International Monde Selection Grand Gold Medals. Jamie’s crisp “toasting style” of Icewine is making The Ice House Winery famous for their innovative food pairings and N’Ice Slushies. A visit to The Ice House Winery is never complete without a The Ice House N’Ice Slushie. This refreshing, sweet and delicious chilled treat is a favourite way for bike riding guests to revive themselves. Like The Ice House Winery, the N’Ice Slushie is a must-do Icewine experience for any wine country tour in Niagara.",
+			"tours": "Tours are offered daily from 11:00 am to 5:00 pm and are $10 per person.<br>They include a N’Ice Slushie plus 4 other Northern Ice samples of Icewine and cocktails.<br><em>Average waiting time is about 10 minutes.</em>",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Thirty Bench Wine Makers": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Thirty Bench is a producer of premium wines grown exclusively on estate vineyards in the Beamsville Bench appellation, a superior winegrowing region on the Niagara Peninsula. We focus on what the vineyard does best, growing Riesling and classic red varietals on vines managed for low yield and maximum fruit intensity.<br><br>Many of our wines are rare and hard to find, but they are even harder to forget.",
+			"tours": "<strong>Personalized Tasting*</strong><br>Tasting Time: 11:00 am to 5:00 pm (every hour).<br><br>A custom-made program for the true wine lover that gives you the opportunity to taste our limited production wines. This 45 minute experience includes an overview of our winemaking facility followed by a personalized tasting in our tasting room conducted by one of our wine consultants. While overlooking our vineyards, enjoy a selection of our Small Lot wines. The cost is $10 for a flight of 4 wines. Complimentary for No. 30 Members and up to 5 guests. Reservations are highly recommended.<br><br><strong>Wine Country Touring Pass*</strong><br>11:00 am to 5:00 pm<br>$20 per person<br><br>The exclusive Wine Country Touring Pass gives guests VIP access to Niagara's best wine experiences. Guests can spend a full day touring and tasting through Wine Country at four of the region's most unique wine destinations: Thirty Bench Wine Makers, Peller Estates, Hillebrand Winery and Wine Country Vintners. Bring your confirmation and pick your pass up at any of the four locations.<br><br><em>*All Winery Experiences are exclusive of HST.</em>",
+			"hours": {
+				"Sun,Mon,Tue,Wed,Thu,Fri": {
+					"open": 1000,
+					"close": 1700
+				},
+				"Sat": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Trius Winery at Hillebrand": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Trius Winery is a Niagara winemaking pioneer. For more than 30 years, we have been crafting fine VQA wines from premium grapes grown in the four appellations of Niagara-on-the-Lake. Nestled between the Niagara escarpment and Lake Ontario, we have made our home in a wine growing region that provides the diversity to grow a number of varietals in unique growing conditions.<br><br>Our winery provides both a wine and culinary journey like no other. A visit to Trius Winery is an unrushed sensory experience, a time out that lets you taste, feel and discover. Our wines and menus are inspired by the seasonal evolution of the vines that surround us, and the local produce that grows beside them.",
+			"tours": "",
+			"hours": {
+				"Sun,Mon,Tue,Wed,Thu": {
+					"open": 1000,
+					"close": 1900
+				},
+				"Fri,Sat": {
+					"open": 1000,
+					"close": 2100
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Vignoble Winery": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "We are a boutique winery in the heart of Niagara on the Lake. We pour our hearts into every drop. Come in to see what makes us special!",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri": {
+					"open": 1100,
+					"close": 1700
+				},
+				"Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Vieni Estates Inc": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Vieni means come or welcome in Italian and that is just how we want you to feel - welcomed and at home at Vieni Estates, situated on a diverse and breathtaking 175 acre estate on the edge of the Niagara Escarpment.<br><br>The founder of Vieni Estates brings his passion for wine from Italy and combines it with his love for this distinctly Canadian wine region, and particularly the unique attributes of the rolling hills of the Vinemount Ridge. Master winemaker Mauro Salvador takes the best of the many varietals grown on the estate to produce a broad and compelling range of still wines, icewines and sparkling wines crafted in the Charmat method (Metodo Italiano). Each offering is crafted to reflect the best of the terroir, the varietal, and the winemaker's skills.<br><br>In addition to the many fine wines produced here, Vieni Estates also offers traditional Italian-style grappas and spirits distilled from the many fruits of Ontario.<br><br>Immerse yourself further in the Vieni experience by staying at the beautifully updated Bed & Breakfast, where every room has a stunning view of the vineyards.",
+			"tours": "",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
+	"Vineland Estates": {
+		"priority": 1,
+		"participating": true,
+		"details": {
+			"overview": "Vieni means come or welcome in Italian and that is just how we want you to feel - welcomed and at home at Vieni Estates, situated on a diverse and breathtaking 175 acre estate on the edge of the Niagara Escarpment.<br><br>The founder of Vieni Estates brings his passion for wine from Italy and combines it with his love for this distinctly Canadian wine region, and particularly the unique attributes of the rolling hills of the Vinemount Ridge. Master winemaker Mauro Salvador takes the best of the many varietals grown on the estate to produce a broad and compelling range of still wines, icewines and sparkling wines crafted in the Charmat method (Metodo Italiano). Each offering is crafted to reflect the best of the terroir, the varietal, and the winemaker's skills.<br><br>In addition to the many fine wines produced here, Vieni Estates also offers traditional Italian-style grappas and spirits distilled from the many fruits of Ontario.<br><br>Immerse yourself further in the Vieni experience by staying at the beautifully updated Bed & Breakfast, where every room has a stunning view of the vineyards.",
+			"tours": "Daily at 12:00pm and 4:00pm.<br>$9 per person.<br>Includes 3 classic wines and a $5 \"day of\" coupon good for any wine purchase.<br><em>Prices include taxes but not gratuity.</em><br><br>Private tours are available all year by reservation (Photo Safari, Girls Just Want to Have Fun, etc). Times by reservation and priced by package. For more details please contact us using extension 24.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1000,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	}
+}
