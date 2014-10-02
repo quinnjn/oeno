@@ -1,4 +1,4 @@
-image: bradrydzewski/android
+image: bradrydzewski/android:r23
 env:
 script:
   - ./gradlew assemble
