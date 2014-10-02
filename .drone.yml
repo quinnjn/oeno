@@ -1,7 +1,7 @@
 image: bradrydzewski/android
 env:
 script:
-  - ./gradlew test assemble -PdisablePreDex
+  - ./gradlew assemble
 notify:
   email:
     recipients:
