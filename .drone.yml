@@ -2,6 +2,11 @@ image: bradrydzewski/android:r23
 env:
 script:
   - ./gradlew assemble
+deploy:
+    git:
+        target: git@bitbucket.com/oeno.git
+        branch: release
+        force: false
 notify:
   email:
     recipients:
