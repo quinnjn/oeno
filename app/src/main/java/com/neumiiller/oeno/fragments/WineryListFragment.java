@@ -98,7 +98,7 @@ public class WineryListFragment extends Fragment {
         ArrayList<Winery> wineries = new ArrayList<Winery>();
 
         try {
-            inputStream = assetManager.open("wineries.json");
+            inputStream = assetManager.open("Data/wineries.json");
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
             JsonElement root = new JsonParser().parse(reader);
