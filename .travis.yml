@@ -5,6 +5,9 @@ android:
   components:
     - build-tools-19.1.0
 
+before_script:
+  - "[[ $TRAVIS_BRANCH == \"master\" ]] && $TRAVIS_TAG=\"SNAPSHOT\""
+
 script: 
   ./gradlew assembleRelease
 
