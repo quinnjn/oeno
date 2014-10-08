@@ -7,3 +7,13 @@ android:
 
 script: 
   ./gradlew assembleRelease
+
+deploy:
+  provider: releases
+  api-key: "1daa428fb4d9271a1c2a957f42265f84ae1cfaad"
+  file:
+    - "app/build/apk/app-release.apk"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
