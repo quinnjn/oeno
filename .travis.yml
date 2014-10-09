@@ -6,7 +6,8 @@ android:
     - build-tools-19.1.0
 
 script: 
-  ./gradlew assembleRelease
+  - ./gradlew unitTest
+  - ./gradlew assembleRelease
 
 deploy:
   provider: releases
