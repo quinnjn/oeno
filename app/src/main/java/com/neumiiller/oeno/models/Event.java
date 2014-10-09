@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /**
  * @author QJN on 2014-10-09.
  */
-public class Event implements Parcelable, Parcelable {
+public class Event implements Parcelable {
 	private String winery;
 
     protected Event(Parcel in) {
