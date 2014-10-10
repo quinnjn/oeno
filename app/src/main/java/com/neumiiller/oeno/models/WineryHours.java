@@ -1,13 +1,13 @@
 package com.neumiiller.oeno.models;
 
 import java.util.HashMap;
-import java.util.TreeMap;
+import java.util.LinkedHashMap;
 import com.neumiiller.oeno.models.WineryTime;
 
 /**
  * @author QJN on 2014-10-09.
  */
-public class WineryHours extends TreeMap<String, WineryTime> {
+public class WineryHours extends LinkedHashMap<String, WineryTime> {
 
 	public String getHourString() {
 		String hourString = "";
@@ -53,7 +53,8 @@ public class WineryHours extends TreeMap<String, WineryTime> {
 		
 		fullDayMap.put("Mon", "Monday");
 		fullDayMap.put("Tue", "Tuesday");
-		fullDayMap.put("Wed", "Wedday");
+		fullDayMap.put("Tues", "Tuesday"); // TODO unsure which Tue[s] to show. 
+		fullDayMap.put("Wed", "Wednesay");
 		fullDayMap.put("Thu", "Thursday");
 		fullDayMap.put("Fri", "Friday");
 		fullDayMap.put("Sat", "Saturday");
