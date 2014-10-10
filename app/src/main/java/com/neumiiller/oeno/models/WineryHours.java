@@ -1,5 +1,6 @@
 package com.neumiiller.oeno.models;
 
+import java.util.HashMap;
 import java.util.TreeMap;
 import com.neumiiller.oeno.models.WineryTime;
 
@@ -48,22 +49,16 @@ public class WineryHours extends TreeMap<String, WineryTime> {
     }
 
 	public String getFullDay(String key) {
-		String day = "Sunday";
-
-		if (key == "Mon") {
-			day = "Monday";
-		} else if (key == "Tue") {
-			day = "Tuesday";
-		} else if (key == "Wed") {
-			day = "Wednesday";
-		} else if (key == "Thu") {
-			day = "Thursday";
-		} else if (key == "Fri") {
-			day = "Friday";
-		} else if (key == "Sat") {
-			day = "Saturday";
-		}
-
-		return day;
+		HashMap<String, String> fullDayMap = new HashMap<String, String>();
+		
+		fullDayMap.put("Mon", "Monday");
+		fullDayMap.put("Tue", "Tuesday");
+		fullDayMap.put("Wed", "Wedday");
+		fullDayMap.put("Thu", "Thursday");
+		fullDayMap.put("Fri", "Friday");
+		fullDayMap.put("Sat", "Saturday");
+		fullDayMap.put("Sun", "Sunday");
+		
+		return fullDayMap.get(key);
 	}
 }
