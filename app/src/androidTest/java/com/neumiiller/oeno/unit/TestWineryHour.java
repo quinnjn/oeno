@@ -24,8 +24,8 @@ public class TestWineryHour extends TestCase {
 				"Sun"
 		};
 		String expected = "" +
-				"Monday to Saturday " + time.getHourString() + "\n" +
-				"Sunday "+ time.getHourString()
+				"Monday to Saturday: " + time.getHourString() + "\n" +
+				"Sunday: "+ time.getHourString()
 				;
 		
 		WineryHours hours = new WineryHours();
@@ -44,8 +44,8 @@ public class TestWineryHour extends TestCase {
 				"Sun"
 		};
 		String expected = "" +
-				"Monday " + time.getHourString() + "\n" +
-				"Sunday "+ time.getHourString()
+				"Monday: " + time.getHourString() + "\n" +
+				"Sunday: "+ time.getHourString()
 				;
 		
 		WineryHours hours = new WineryHours();
@@ -64,8 +64,8 @@ public class TestWineryHour extends TestCase {
 				"Sun"
 		};
 		String expected = "" +
-				"Monday and Tuesday" + time.getHourString() + "\n" +
-				"Sunday "+ time.getHourString()
+				"Monday and Tuesday: " + time.getHourString() + "\n" +
+				"Sunday: "+ time.getHourString()
 				;
 		
 		WineryHours hours = new WineryHours();
@@ -83,7 +83,7 @@ public class TestWineryHour extends TestCase {
 				"Sun"
 		};
 		String expected = "" +
-				"Sunday "+ time.getHourString()
+				"Sunday: "+ time.getHourString()
 				;
 		
 		WineryHours hours = new WineryHours();
