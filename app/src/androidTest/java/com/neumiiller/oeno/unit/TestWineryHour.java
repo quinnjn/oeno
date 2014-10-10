@@ -16,6 +16,36 @@ public class TestWineryHour extends TestCase {
 		hours.put("Mon", time);
 		assertNotNull(time);
 	}
+
+	public void testEveryDayOfWeek(){
+		WineryTime time = new WineryTime(900,1000);
+		String[] days = {
+				"Mon",
+				"Tue",
+				"Wed",
+				"Thu",
+				"Fri",
+				"Sat",
+				"Sun"
+		};
+		String expected = "" +
+				"Monday: "+ time.getHourString() + "\n" +
+				"Tuesday: "+ time.getHourString() + "\n" +
+				"Wednesday: "+ time.getHourString() + "\n" +
+				"Thursday: "+ time.getHourString() + "\n" +
+				"Friday: "+ time.getHourString() + "\n" +
+				"Saturday: "+ time.getHourString() + "\n" +
+				"Sunday: "+ time.getHourString()
+				;
+		
+		WineryHours hours = new WineryHours();
+		for(String day : days){
+			hours.put(day, time);
+		}
+		
+		String actual = hours.getHourString();
+		assertEquals(expected, actual);
+	}
 	
 	public void testFullWeek(){
 		WineryTime time = new WineryTime(900,1000);
