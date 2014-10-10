@@ -13,7 +13,14 @@ public class WineryTime {
 	}
 
 	public String getHourString(){
-		// TODO implement.
+		if(isClosed()){
+			return "Closed";
+		}
+
 		return null;
+	}
+	
+	private boolean isClosed(){
+		return close < open;
 	}
 }
