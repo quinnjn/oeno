@@ -29,9 +29,12 @@ public class WineryHours extends LinkedHashMap<String, WineryTime> {
 
         int firstIndex = 0;
         int lastIndex = dayArray.length - 1;
+        
+        String firstDayKey = dayArray[firstIndex].trim();
+        String lastDayKey = dayArray[lastIndex].trim();
 
-        String firstDay = getFullDay(dayArray[firstIndex]);
-        String lastDay = getFullDay(dayArray[lastIndex]);
+        String firstDay = getFullDay(firstDayKey);
+        String lastDay = getFullDay(lastDayKey);
 
         String splitGrammar = (dayArray.length > 2) ? "to" : "and";
 
