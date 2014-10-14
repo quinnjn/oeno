@@ -54,7 +54,7 @@ public class WineryHours extends LinkedHashMap<String, WineryTime> {
 		fullDayMap.put("Mon", "Monday");
 		fullDayMap.put("Tue", "Tuesday");
 		fullDayMap.put("Tues", "Tuesday"); // TODO unsure which Tue[s] to show. 
-		fullDayMap.put("Wed", "Wednesay");
+		fullDayMap.put("Wed", "Wednesday");
 		fullDayMap.put("Thu", "Thursday");
 		fullDayMap.put("Fri", "Friday");
 		fullDayMap.put("Sat", "Saturday");
