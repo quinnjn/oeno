@@ -90,7 +90,7 @@ public class TestWineryHour extends TestCase {
 	public void testTwoConsecutiveDays(){
 		WineryTime time = new WineryTime(900,1000);
 		String[] days = {
-				"Mon, Tues",
+				"Mon,Tues",
 				"Sun"
 		};
 		String expected = "" +
