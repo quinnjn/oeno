@@ -97,6 +97,21 @@
 			"contact": ""
 		}
 	},
+	"Colaneri Estate": {
+		"priority": 1,
+		"participating": false,
+		"details": {
+			"overview": "Colaneri is a family-owned and operated winery that hand-harvests grapes to produce premium VQA award-winning wines from its surrounding vineyards. Most of the wines are made with the traditional Italian appassimento method of drying grapes, including a portfolio of red, white, dessert wines including Recioto, Ripasso and Amarone styles. Beautifully situated on the St. David`s Bench in Niagara`s wine region, the building sits in the heart of the vineyard, within the lush, pulsating vines. We invite you to come visit us and experience the passion that went into making our wines and our home.",
+			"tours": "We currently do not conduct tours of our facility.",
+			"hours": {
+				"Mon,Tue,Wed,Thu,Fri,Sat,Sun": {
+					"open": 1100,
+					"close": 1800
+				}
+			},
+			"contact": ""
+		}
+	},
 	"Coyote's Run Estate": {
 		"priority": 1,
 		"participating": true,

@@ -61,6 +61,16 @@
 			}
 		},
 		{
+			"name":"Colaneri Estate",
+			"location": {
+				"address":"348 Concession 6 Road",
+				"city":"Niagara-on-the-Lake",
+				"telephone":"9056822100",
+				"latitude":43.16279,
+				"longitude":-79.137353
+			}
+		},
+		{
 			"name":"Coyote's Run Estate",
 			"location": {
 				"address":"685 Concession 5 Road",
