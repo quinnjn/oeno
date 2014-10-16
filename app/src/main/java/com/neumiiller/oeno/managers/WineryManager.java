@@ -19,6 +19,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.BufferedInputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,6 +27,8 @@ import java.util.Map;
 import java.util.Iterator;
 
 import android.util.Log;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 public class WineryManager {
 	
@@ -47,6 +50,23 @@ public class WineryManager {
 	public WineryMeta getWineryMeta(Winery winery){
 		return WINERY_META.get(winery.getName());
 	}
+	
+	public Bitmap getWineryListPicture(Context context, Winery winery){
+		return loadBitmap(context, "Images/wineries/" + winery.getName().replace(" ", "-").toLowerCase() + ".jpg");        
+	}
+	
+	public Bitmap loadBitmap(Context context, String fileName){
+        AssetManager assets = context.getResources().getAssets();
+        InputStream buf = null;
+        try {
+        	 buf = new BufferedInputStream((assets.open(fileName)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Bitmap bitmap = BitmapFactory.decodeStream(buf);
+        // Drawable d = new BitmapDrawable(bitmap);
+        return bitmap;
+    } 
 	
 	private class WineryLoadingManager {
 		Gson gson = new Gson();
