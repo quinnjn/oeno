@@ -21,12 +21,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.neumiiller.oeno.R;
+import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.adapters.WineryListAdapter;
 import com.neumiiller.oeno.models.Winery;
 
@@ -60,8 +63,17 @@ public class WineryListFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        setWineryListFragmentListener(activity);
-        ArrayList<Winery> wineries = getWineriesFromFile(activity);
+        setWineryListFragmentListener(activity);        
+        
+        Log.d("null check", OenoApplication.getInstance().toString());
+        Log.d("null check", OenoApplication.getInstance().getWineryManager().toString());
+        Log.d("null check", OenoApplication.getInstance().getWineryManager().getWineries().toString());
+        
+        
+        ArrayList<Winery> wineries = OenoApplication.getInstance().getWineryManager().getWineries();
+        for(Winery winery : wineries){
+        	Log.d("winery", winery.getName());
+        }
         listAdapter = new WineryListAdapter(activity, wineries);
         listAdapter.updateLocation(getLocation(activity));
     }

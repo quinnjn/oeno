@@ -3,11 +3,15 @@ package com.neumiiller.oeno.models;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.neumiiller.oeno.models.MetaData;
+import com.neumiiller.oeno.models.WineryHours;
+
 /**
  * @author QJN on 2014-10-09.
  */
 public class Event implements Parcelable {
 	private String winery;
+	private MetaData meta;	
 
     protected Event(Parcel in) {
         winery = in.readString();
