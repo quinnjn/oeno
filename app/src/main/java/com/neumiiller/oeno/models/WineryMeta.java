@@ -13,4 +13,12 @@ public class WineryMeta {
 	private int priority;
 	private boolean participating;
 	private WineryDetails details;
+
+	public int getPriority(){
+		return priority;
+	}
+
+	public WineryDetails getDetails(){
+		return details;
+	}
 }

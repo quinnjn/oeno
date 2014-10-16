@@ -10,6 +10,7 @@ import android.os.Parcelable;
 public class Winery implements Parcelable {
     private String name;
     private WineryLocation location;
+    private WineryMeta meta;
 
     private WineryLocation getWineryLocation(){
         return location;
@@ -36,6 +37,14 @@ public class Winery implements Parcelable {
             name = "";
         }
         return name;
+    }
+
+    public void setMeta(WineryMeta meta){
+        this.meta = meta;
+    }
+
+    public WineryMeta getMeta(){
+        return this.meta;
     }
 
     public void updateLocation(Location location) {

@@ -9,14 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.neumiiller.oeno.R;
+import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.models.Winery;
 
 import java.util.List;
 
 public class WineryListAdapter extends ArrayAdapter<Winery> {
 
-    public WineryListAdapter(Context context, List<Winery> objects) {
-        super(context, R.layout.view_winery_list_item, objects);
+    public WineryListAdapter(Context context) {
+        super(context, R.layout.view_winery_list_item, OenoApplication.getInstance().getWineryManager().getWineries());
     }
 
     @Override

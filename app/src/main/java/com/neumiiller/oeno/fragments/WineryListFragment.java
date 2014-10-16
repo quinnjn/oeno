@@ -64,17 +64,7 @@ public class WineryListFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         setWineryListFragmentListener(activity);        
-        
-        Log.d("null check", OenoApplication.getInstance().toString());
-        Log.d("null check", OenoApplication.getInstance().getWineryManager().toString());
-        Log.d("null check", OenoApplication.getInstance().getWineryManager().getWineries().toString());
-        
-        
-        ArrayList<Winery> wineries = OenoApplication.getInstance().getWineryManager().getWineries();
-        for(Winery winery : wineries){
-        	Log.d("winery", winery.getName());
-        }
-        listAdapter = new WineryListAdapter(activity, wineries);
+        listAdapter = new WineryListAdapter(activity);
         listAdapter.updateLocation(getLocation(activity));
     }
 

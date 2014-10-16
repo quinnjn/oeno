@@ -34,16 +34,29 @@ public class WineryManager {
 	
 	public WineryManager(OenoApplication app){
 		WineryLoadingManager loadingManager = new WineryLoadingManager();
-		WINERIES.addAll(loadingManager.loadWineriesFromFile(app));
 		WINERY_META.putAll(loadingManager.loadWineryMetaFromFile(app));
+		WINERIES.addAll(loadingManager.loadWineriesFromFile(app));
+		
+		loadingManager.connect(WINERIES, WINERY_META);
 	}
 	
 	public ArrayList<Winery> getWineries(){
 		return WINERIES;
 	}
 	
+	public WineryMeta getWineryMeta(Winery winery){
+		return WINERY_META.get(winery.getName());
+	}
+	
 	private class WineryLoadingManager {
 		Gson gson = new Gson();
+		
+		public void connect(ArrayList<Winery> wineries, HashMap<String, WineryMeta> wineryMetaMap){
+			for(Winery winery : wineries){
+				WineryMeta wineryMeta = wineryMetaMap.get(winery.getName());
+				winery.setMeta(wineryMeta);
+			}
+		}
 		
 		public ArrayList<Winery> loadWineriesFromFile(Context context){
 	    	Type type = new TypeToken<ArrayList<Winery>>(){}.getType();

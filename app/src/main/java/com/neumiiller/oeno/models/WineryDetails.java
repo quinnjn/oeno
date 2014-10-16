@@ -15,4 +15,8 @@ public class WineryDetails {
 	private String tours;
 	private WineryHours hours;
 	private String contact;
+
+	public String getTourString(){
+		return tours;
+	}
 }
