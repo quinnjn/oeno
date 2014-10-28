@@ -7,10 +7,10 @@
     <string name="winery_list_map_string">View Wineries On Map</string>
     <string-array name="drawer_strings">
         <item>Featured Wineries</item>
-        <item>\?\?\?\?\? Wineries</item>
+        <item>Nearby Wineries</item>
         <item>Promotions</item>
         <item>Events</item>
-        <item>oenopass</item>
+        <item>oeno<b>pass</b></item>
     </string-array>
 
 </resources>
