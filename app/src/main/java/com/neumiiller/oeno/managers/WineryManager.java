@@ -54,6 +54,10 @@ public class WineryManager {
 	public Bitmap getWineryListPicture(Context context, Winery winery){
 		return loadBitmap(context, "Images/wineries/" + winery.getName().replace(" ", "-").toLowerCase() + ".jpg");        
 	}
+
+    public Bitmap getWineryFullPicture(Context context, Winery winery){
+        return loadBitmap(context, "Images/wineries/" + winery.getName().replace(" ", "-").toLowerCase()+"-full.jpg");
+    }
 	
 	public Bitmap loadBitmap(Context context, String fileName){
         AssetManager assets = context.getResources().getAssets();
