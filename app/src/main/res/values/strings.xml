@@ -10,7 +10,7 @@
         <item>Nearby Wineries</item>
         <item>Promotions</item>
         <item>Events</item>
-        <item>oeno<b>pass</b></item>
+        <item><![CDATA[oeno<b>pass</b>]]></item>
     </string-array>
 
 </resources>

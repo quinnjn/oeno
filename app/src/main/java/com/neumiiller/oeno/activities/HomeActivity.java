@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -63,7 +64,16 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
 
     private void initializeDrawerList() {
         String[] drawerItems = getResources().getStringArray(R.array.drawer_strings);
-        drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerItems));
+        ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_list_item_1, drawerItems) {
+
+            @Override
+            public CharSequence getItem(int position) {
+                return Html.fromHtml((String) super.getItem(position));
+            }
+
+        };
+        
+        drawerList.setAdapter(adapter);
         drawerList.setOnItemClickListener(drawListClickListener);
     }
     
