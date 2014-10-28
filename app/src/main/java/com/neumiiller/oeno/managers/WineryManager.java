@@ -32,15 +32,21 @@ import android.graphics.BitmapFactory;
 
 public class WineryManager {
 
-    private static final String WINERY_IMAGE_PATH = "Images/wineries/";
+	private static final String DATA_DIR = "Data/";
+	private static final String IMAGES_DIR = "Images/";
+	
+	private static final String WINERY_IMAGE_PATH = IMAGES_DIR + "wineries/";
+	
+	private static final String WINERIES_JSON_PATH = DATA_DIR +  "wineries.json";
+	private static final String WINERY_META_JSON_PATH = DATA_DIR +  "wineries-meta.json";
 
 	private final ArrayList<Winery> WINERIES = new ArrayList<Winery>();
 	private final HashMap<String, WineryMeta> WINERY_META = new HashMap<String, WineryMeta>(); 
 	
-	public WineryManager(OenoApplication app){
+	public WineryManager(Context context){
 		WineryLoadingManager loadingManager = new WineryLoadingManager();
-		WINERY_META.putAll(loadingManager.loadWineryMetaFromFile(app));
-		WINERIES.addAll(loadingManager.loadWineriesFromFile(app));
+		WINERY_META.putAll(loadingManager.loadWineryMetaFromFile(context));
+		WINERIES.addAll(loadingManager.loadWineriesFromFile(context));
 		
 		loadingManager.connect(WINERIES, WINERY_META);
 	}
@@ -85,7 +91,6 @@ public class WineryManager {
             e.printStackTrace();
         }
         Bitmap bitmap = BitmapFactory.decodeStream(buf);
-        // Drawable d = new BitmapDrawable(bitmap);
         return bitmap;
     } 
 	
@@ -102,7 +107,7 @@ public class WineryManager {
 		public ArrayList<Winery> loadWineriesFromFile(Context context){
 	    	Type type = new TypeToken<ArrayList<Winery>>(){}.getType();
 	    	
-	    	JsonElement root = loadJsonElementFromFile(context, "Data/wineries.json");
+	    	JsonElement root = loadJsonElementFromFile(context, WINERIES_JSON_PATH);
 	    	JsonArray wineryArray = root.getAsJsonObject().getAsJsonArray("wineries");
 	    	return gson.fromJson(wineryArray, type);
 	    }
@@ -112,7 +117,7 @@ public class WineryManager {
 			
 	    	Type type = new TypeToken<WineryMeta>(){}.getType();
 	    	
-	    	JsonElement root = loadJsonElementFromFile(context, "Data/wineries-meta.json");
+	    	JsonElement root = loadJsonElementFromFile(context, WINERY_META_JSON_PATH);
 	    	JsonObject rootObject = root.getAsJsonObject();
 	    	
 	    	for(Map.Entry<String, JsonElement> entry : rootObject.entrySet()){
