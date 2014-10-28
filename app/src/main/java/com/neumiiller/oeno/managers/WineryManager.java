@@ -1,4 +1,4 @@
-package com.neumiiller.oeno.manager;
+package com.neumiiller.oeno.managers;
 
 import android.content.Context;
 
@@ -31,7 +31,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 public class WineryManager {
-	
+
+    private static final String WINERY_IMAGE_PATH = "Images/wineries/";
+
 	private final ArrayList<Winery> WINERIES = new ArrayList<Winery>();
 	private final HashMap<String, WineryMeta> WINERY_META = new HashMap<String, WineryMeta>(); 
 	
@@ -52,11 +54,26 @@ public class WineryManager {
 	}
 	
 	public Bitmap getWineryListPicture(Context context, Winery winery){
-		return loadBitmap(context, "Images/wineries/" + winery.getName().replace(" ", "-").toLowerCase() + ".jpg");        
+		return loadBitmap(context, getWineryImagePath(winery) + ".jpg");
 	}
 
     public Bitmap getWineryFullPicture(Context context, Winery winery){
-        return loadBitmap(context, "Images/wineries/" + winery.getName().replace(" ", "-").toLowerCase()+"-full.jpg");
+        return loadBitmap(context, getWineryImagePath(winery) + "-full.jpg");
+    }
+
+    private String getWineryImagePath(Winery winery){
+        String wineryName = winery.getName();
+
+        //lowercase
+        wineryName = wineryName.toLowerCase();
+
+        //replace all spaces with `-`
+        wineryName = wineryName.replace(" ", "-");
+
+        //Remove all non-(alphanumeric chars and dash)
+        wineryName = wineryName.replaceAll("[^a-z0-9-]", "");
+
+        return WINERY_IMAGE_PATH + wineryName;
     }
 	
 	public Bitmap loadBitmap(Context context, String fileName){

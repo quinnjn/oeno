@@ -1,7 +1,7 @@
 package com.neumiiller.oeno;
 
 import android.app.Application;
-import com.neumiiller.oeno.manager.WineryManager;
+import com.neumiiller.oeno.managers.WineryManager;
 
 public class OenoApplication extends Application {
 	
