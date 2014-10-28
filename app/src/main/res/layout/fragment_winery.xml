@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/winery_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            
+            <View
+                    android:id="@+id/winery_spacer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            <TextView
+                    style="@style/WhiteText"
+                    android:id="@+id/winery_driving_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/winery_spacer"
+                    android:textSize="30dp"
+                    android:text="15 min drive"/>
+
+            <TextView
+                    style="@style/WhiteText"
+                    android:id="@+id/winery_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/winery_driving_time"
+                    android:textSize="40dp"
+                    android:text="10.3 km"/>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
