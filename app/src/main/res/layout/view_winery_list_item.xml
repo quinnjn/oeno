@@ -21,12 +21,17 @@
         android:src="@drawable/bg_gradient"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/winery_participating_badge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_participating_red"
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
     <TextView
             style="@style/WhiteText"

@@ -18,6 +18,10 @@ public class WineryMeta {
 		return priority;
 	}
 
+    public boolean isParticipating(){
+        return participating;
+    }
+
 	public WineryDetails getDetails(){
 		return details;
 	}

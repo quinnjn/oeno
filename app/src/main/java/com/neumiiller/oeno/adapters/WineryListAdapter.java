@@ -32,6 +32,7 @@ public class WineryListAdapter extends ArrayAdapter<Winery> {
         Winery winery = getItem(position);
 
         ImageView photo = (ImageView)view.findViewById(R.id.winery_photo);
+        ImageView participatingBadge = (ImageView) view.findViewById(R.id.winery_participating_badge);
         TextView city = (TextView)view.findViewById(R.id.winery_list_item_city);
         TextView drivingTime = (TextView) view.findViewById(R.id.winery_list_item_driving_time);
         TextView distance = (TextView) view.findViewById(R.id.winery_list_item_distance);
@@ -39,6 +40,10 @@ public class WineryListAdapter extends ArrayAdapter<Winery> {
         TextView name = (TextView) view.findViewById(R.id.winery_list_item_name);
 
         photo.setImageBitmap(OenoApplication.getInstance().getWineryManager().getWineryListPicture(getContext(), winery));
+
+        int participatingBadgeVisibility = winery.getMeta()
+                .isParticipating() ? View.VISIBLE : View.GONE;
+        participatingBadge.setVisibility(participatingBadgeVisibility);
         city.setText(winery.getCity());
         drivingTime.setText(winery.getDrivingTime());
         distance.setText(""+winery.getDistance());
