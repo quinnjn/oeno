@@ -22,6 +22,8 @@ import java.io.InputStreamReader;
 import java.io.BufferedInputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
@@ -49,6 +51,18 @@ public class WineryManager {
 		WINERIES.addAll(loadingManager.loadWineriesFromFile(context));
 		
 		loadingManager.connect(WINERIES, WINERY_META);
+
+        Collections.sort(WINERIES, new Comparator<Winery>() {
+            @Override
+            public int compare(Winery winery, Winery winery2) {
+                int priority = winery.getMeta().getPriority() - winery2.getMeta().getPriority();
+
+                if(priority != 0){
+                    return priority;
+                }
+                return winery.hashCode() - winery2.hashCode();
+            }
+        });
 	}
 	
 	public ArrayList<Winery> getWineries(){
