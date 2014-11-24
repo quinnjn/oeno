@@ -13,6 +13,7 @@ import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.models.Winery;
 
+import java.util.Collections;
 import java.util.List;
 
 public class WineryListAdapter extends ArrayAdapter<Winery> {

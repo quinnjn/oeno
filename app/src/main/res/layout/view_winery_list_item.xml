@@ -11,6 +11,23 @@
             android:adjustViewBounds="true"
             android:src="@drawable/placekitten"/>
 
+    <ImageView
+        android:id="@+id/winery_photo_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/winery_photo"
+        android:layout_alignBottom="@id/winery_photo"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg_gradient"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"/>
+
     <TextView
             style="@style/WhiteText"
             android:id="@+id/winery_list_item_city"
