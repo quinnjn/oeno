@@ -31,6 +31,7 @@ import com.google.gson.reflect.TypeToken;
 import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.adapters.WineryListAdapter;
+import com.neumiiller.oeno.managers.WineryManager;
 import com.neumiiller.oeno.models.Winery;
 
 import java.io.BufferedReader;
@@ -93,27 +94,6 @@ public class WineryListFragment extends Fragment {
             }
         });
         super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    private ArrayList<Winery> getWineriesFromFile(Context context){
-        Gson gson = new Gson();
-        Type type = new TypeToken<ArrayList<Winery>>(){}.getType();
-        AssetManager assetManager = context.getAssets();
-        InputStream inputStream = null;
-        ArrayList<Winery> wineries = new ArrayList<Winery>();
-
-        try {
-            inputStream = assetManager.open("Data/wineries.json");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-
-            JsonElement root = new JsonParser().parse(reader);
-            JsonArray wineryArray = root.getAsJsonObject().getAsJsonArray("wineries");
-            wineries = gson.fromJson(wineryArray, type);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return wineries;
     }
 
     @Override
