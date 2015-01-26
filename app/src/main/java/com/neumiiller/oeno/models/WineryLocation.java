@@ -18,30 +18,35 @@ public class WineryLocation implements Parcelable {
     private double longitude;
     private String distance;
     private String drivingTime;
+    private boolean locationUpdated = false;
 
     public String getCity() {
-        if(city == null){
+        if (city == null) {
             city = "";
         }
         return city;
     }
 
     public String getDrivingTime() {
-        if(TextUtils.isEmpty(drivingTime)){
+        if (TextUtils.isEmpty(drivingTime)) {
             return "0 min drive";
         }
         return drivingTime;
     }
 
+    public boolean isLocationUpdated() {
+        return locationUpdated;
+    }
+
     public String getDistance() {
-        if(TextUtils.isEmpty(distance)){
+        if (TextUtils.isEmpty(distance)) {
             return "0 km";
         }
         return distance;
     }
 
     public String getAddress() {
-        if(address == null){
+        if (address == null) {
             address = "";
         }
         return address;
@@ -59,13 +64,14 @@ public class WineryLocation implements Parcelable {
 
         float drivingTime = km * KM_TO_MIN;
         setDrivingTime(drivingTime);
+        this.locationUpdated = km > 0;
     }
 
-    private void setDistance(float distanceKm){
+    private void setDistance(float distanceKm) {
         this.distance = String.format("%1.1f km", distanceKm);
     }
 
-    private void setDrivingTime(float drivingTime){
+    private void setDrivingTime(float drivingTime) {
         DecimalFormat drivingTimeFormatter = new DecimalFormat("#");
         double drivingTimeCeil = Math.ceil(drivingTime);
         String stringPlaceholder = " min drive";
@@ -80,6 +86,7 @@ public class WineryLocation implements Parcelable {
         longitude = in.readDouble();
         distance = in.readString();
         drivingTime = in.readString();
+        locationUpdated = in.readInt() == 0;
     }
 
     @Override
@@ -96,6 +103,7 @@ public class WineryLocation implements Parcelable {
         dest.writeDouble(longitude);
         dest.writeString(distance);
         dest.writeString(drivingTime);
+        dest.writeInt(locationUpdated ? 0 : 1);
     }
 
     @SuppressWarnings("unused")

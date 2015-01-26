@@ -3,6 +3,7 @@ package com.neumiiller.oeno.models;
 import android.location.Location;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.text.TextUtils;
 
 /**
  * @author QJN on 2014-09-15.
@@ -11,6 +12,10 @@ public class Winery implements Parcelable {
     private String name;
     private WineryLocation location;
     private WineryMeta meta;
+
+    public boolean shouldShowLocation(){
+        return location.isLocationUpdated();
+    }
 
     private WineryLocation getWineryLocation(){
         return location;

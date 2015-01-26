@@ -6,15 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.OenoApplication;
+import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.models.Winery;
-
-import java.util.Collections;
-import java.util.List;
 
 public class WineryListAdapter extends ArrayAdapter<Winery> {
 
@@ -25,15 +22,15 @@ public class WineryListAdapter extends ArrayAdapter<Winery> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
-        if(view == null){
+        if (view == null) {
             view = LayoutInflater.from(getContext()).inflate(R.layout.view_winery_list_item, null);
         }
 
         Winery winery = getItem(position);
 
-        ImageView photo = (ImageView)view.findViewById(R.id.winery_photo);
+        ImageView photo = (ImageView) view.findViewById(R.id.winery_photo);
         ImageView participatingBadge = (ImageView) view.findViewById(R.id.winery_participating_badge);
-        TextView city = (TextView)view.findViewById(R.id.winery_list_item_city);
+        TextView city = (TextView) view.findViewById(R.id.winery_list_item_city);
         TextView drivingTime = (TextView) view.findViewById(R.id.winery_list_item_driving_time);
         TextView distance = (TextView) view.findViewById(R.id.winery_list_item_distance);
         TextView address = (TextView) view.findViewById(R.id.winery_list_item_address);
@@ -45,16 +42,24 @@ public class WineryListAdapter extends ArrayAdapter<Winery> {
                 .isParticipating() ? View.VISIBLE : View.GONE;
         participatingBadge.setVisibility(participatingBadgeVisibility);
         city.setText(winery.getCity());
-        drivingTime.setText(winery.getDrivingTime());
-        distance.setText(""+winery.getDistance());
         address.setText(winery.getAddress());
         name.setText(winery.getName());
 
+        if (winery.shouldShowLocation()) {
+            drivingTime.setText(winery.getDrivingTime());
+            distance.setText("" + winery.getDistance());
+            drivingTime.setVisibility(View.VISIBLE);
+            distance.setVisibility(View.VISIBLE);
+        }
+        else {
+            drivingTime.setVisibility(View.GONE);
+            distance.setVisibility(View.GONE);
+        }
         return view;
     }
 
     public void updateLocation(Location location) {
-        for(int i=0; i<getCount(); i++){
+        for (int i = 0; i < getCount(); i++) {
             Winery winery = getItem(i);
             winery.updateLocation(location);
         }
