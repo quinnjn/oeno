@@ -142,12 +142,17 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
             if(fragment == null){
             	return;
             }
-            
+
             transaction.replace(
-                    R.id.home_fragment_root,
-                    fragment,
-                    "currentFragment"
+                    R.id.winery_fragment,
+                    fragment
             );
+            
+//            transaction.replace(
+//                    R.id.home_fragment_root,
+//                    fragment,
+//                    "currentFragment"
+//            );
             transaction.addToBackStack("drawer-"+position);
             transaction.commit();
 
@@ -160,13 +165,13 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
     protected void onResume() {
         super.onResume();
 
-        FragmentManager fragmentManager = getFragmentManager();
-        if(fragmentManager.findFragmentByTag("currentFragment") == null) {
-            Fragment fragment = new WineryListFragment();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.home_fragment_root, fragment, "currentFragment");
-            fragmentTransaction.commit();
-        }
+//        FragmentManager fragmentManager = getFragmentManager();
+//        if(fragmentManager.findFragmentByTag("currentFragment") == null) {
+//            Fragment fragment = new WineryListFragment();
+//            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//            fragmentTransaction.replace(R.id.home_fragment_root, fragment, "currentFragment");
+//            fragmentTransaction.commit();
+//        }
 
     }
 
@@ -191,7 +196,7 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
                 R.anim.slide_out_right
         );
         transaction.replace(
-                R.id.home_fragment_root,
+                R.id.winery_fragment,
                 fragment,
                 "currentFragment"
         );
