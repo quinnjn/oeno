@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.text.Html;
 import android.view.Menu;
@@ -31,6 +32,8 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
 
     private DrawerLayout drawerLayout;
     private ListView drawerList;
+    private ActionBarDrawerToggle drawerToggle;
+
     private Fragment currentFragment;
 
     @Override
@@ -39,11 +42,34 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
         setContentView(R.layout.activity_home);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerList = (ListView)findViewById(R.id.drawer_list);
+        drawerToggle = new ActionBarDrawerToggle(
+                this,
+                drawerLayout,
+                R.drawable.ic_drawer,
+                R.string.app_name,
+                R.string.app_name
+        );
 
         initializeViews();
 
+        drawerLayout.setDrawerListener(drawerToggle);
+
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
+        if (drawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
     private void initializeViews() {
         initializeDrawerList();
