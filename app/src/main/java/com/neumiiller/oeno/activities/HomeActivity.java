@@ -150,6 +150,8 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
             );
             transaction.addToBackStack("drawer-"+position);
             transaction.commit();
+
+            drawerLayout.closeDrawers();
         }
     };
 
