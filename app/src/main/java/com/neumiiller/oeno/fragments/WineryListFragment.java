@@ -65,7 +65,10 @@ public class WineryListFragment extends Fragment {
         super.onAttach(activity);
         setWineryListFragmentListener(activity);        
         listAdapter = new WineryListAdapter(activity);
-        listAdapter.updateLocation(getLocation(activity));
+        Location location = getLocation(activity);
+        if(location != null) {
+            listAdapter.updateLocation(getLocation(activity));
+        }
     }
 
     private void setWineryListFragmentListener(Activity activity) {
