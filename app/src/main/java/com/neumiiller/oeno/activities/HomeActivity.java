@@ -40,22 +40,13 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-        drawerList = (ListView)findViewById(R.id.drawer_list);
-        drawerToggle = new ActionBarDrawerToggle(
-                this,
-                drawerLayout,
-                R.drawable.ic_drawer,
-                R.string.app_name,
-                R.string.app_name
-        );
-
+        connectViews();
         initializeViews();
+    }
 
-        drawerLayout.setDrawerListener(drawerToggle);
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+    @Override protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        drawerToggle.syncState();
     }
 
     @Override
@@ -70,6 +61,21 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
         return super.onOptionsItemSelected(item);
     }
 
+    private void connectViews(){
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        drawerList = (ListView)findViewById(R.id.drawer_list);
+        drawerToggle = new ActionBarDrawerToggle(
+                this,
+                drawerLayout,
+                R.drawable.ic_drawer,
+                R.string.app_name,
+                R.string.app_name
+        );
+
+        drawerLayout.setDrawerListener(drawerToggle);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+    }
 
     private void initializeViews() {
         initializeDrawerList();
