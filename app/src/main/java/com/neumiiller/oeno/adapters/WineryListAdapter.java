@@ -5,6 +5,8 @@ import android.location.Location;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,20 +40,27 @@ public class WineryListAdapter extends ArrayAdapter<Winery> {
 
         photo.setImageBitmap(OenoApplication.getInstance().getWineryManager().getWineryListPicture(getContext(), winery));
 
-        int participatingBadgeVisibility = winery.getMeta()
-                .isParticipating() ? View.VISIBLE : View.GONE;
-        participatingBadge.setVisibility(participatingBadgeVisibility);
         city.setText(winery.getCity());
         address.setText(winery.getAddress());
         name.setText(winery.getName());
+
+        boolean showParticipatingBadge = winery.getMeta()
+                .isParticipating();
+
+        int participatingBadgeVisibility = showParticipatingBadge ? View.VISIBLE : View.GONE;
+        participatingBadge.setVisibility(participatingBadgeVisibility);
+
+        if (winery.getMeta().isParticipating()) {
+            Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.participating_badge);
+            participatingBadge.setAnimation(animation);
+        }
 
         if (winery.shouldShowLocation()) {
             drivingTime.setText(winery.getDrivingTime());
             distance.setText("" + winery.getDistance());
             drivingTime.setVisibility(View.VISIBLE);
             distance.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
             drivingTime.setVisibility(View.GONE);
             distance.setVisibility(View.GONE);
         }
