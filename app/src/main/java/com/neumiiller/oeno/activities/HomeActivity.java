@@ -82,18 +82,6 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
         initializeDrawerLayout();
     }
 
-//    private void initializeFragments(){
-//        FragmentManager fragmentManager = getFragmentManager();
-//        currentFragment = fragmentManager.findFragmentByTag("currentFragment");
-//        if(currentFragment == null){
-//            currentFragment = new WineryListFragment();
-//            fragmentManager.beginTransaction()
-//                    .add(currentFragment, "currentFragment")
-//                    .commit();
-//        }
-//        fragmentManager.executePendingTransactions();
-//    }
-
     private void initializeDrawerList() {
         String[] drawerItems = getResources().getStringArray(R.array.drawer_strings);
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_list_item_1, drawerItems) {
@@ -144,15 +132,10 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
             }
 
             transaction.replace(
-                    R.id.winery_fragment,
+                    R.id.home_fragment_root,
                     fragment
             );
-            
-//            transaction.replace(
-//                    R.id.home_fragment_root,
-//                    fragment,
-//                    "currentFragment"
-//            );
+
             transaction.addToBackStack("drawer-"+position);
             transaction.commit();
 
@@ -165,13 +148,13 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
     protected void onResume() {
         super.onResume();
 
-//        FragmentManager fragmentManager = getFragmentManager();
-//        if(fragmentManager.findFragmentByTag("currentFragment") == null) {
-//            Fragment fragment = new WineryListFragment();
-//            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//            fragmentTransaction.replace(R.id.home_fragment_root, fragment, "currentFragment");
-//            fragmentTransaction.commit();
-//        }
+        FragmentManager fragmentManager = getFragmentManager();
+        if(fragmentManager.findFragmentByTag("currentFragment") == null) {
+            Fragment fragment = new WineryListFragment();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.home_fragment_root, fragment, "currentFragment");
+            fragmentTransaction.commit();
+        }
 
     }
 
@@ -196,7 +179,7 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
                 R.anim.slide_out_right
         );
         transaction.replace(
-                R.id.winery_fragment,
+                R.id.home_fragment_root,
                 fragment,
                 "currentFragment"
         );
