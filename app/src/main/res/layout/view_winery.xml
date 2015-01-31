@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        style="@style/WhiteText"
+        android:id="@+id/winery_driving_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/winery_spacer"
+        android:textSize="30dp"
+        android:text="15 min drive"/>
+
+    <TextView
+        style="@style/WhiteText"
+        android:id="@+id/winery_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/winery_driving_time"
+        android:textSize="40dp"
+        android:text="10.3 km"/>
+
+    <LinearLayout
+        android:id="@+id/winery_details_wrapper"
+        android:layout_below="@id/winery_driving_time"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"/>
+
+        <TextView
+            style="@style/WhiteText"
+            android:id="@+id/winery_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLAHBLAHBLAH"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/winery_tours_wrapper"
+        android:layout_below="@id/winery_details_wrapper"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tours"/>
+
+        <TextView
+            style="@style/WhiteText"
+            android:id="@+id/winery_tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLAHBLAHBLAH"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/winery_tasting_room_wrapper"
+        android:layout_below="@id/winery_tours_wrapper"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasting Room Hours"/>
+
+        <TextView
+            style="@style/WhiteText"
+            android:id="@+id/winery_tasting_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLAHBLAHBLAH"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/winery_contact_wrapper"
+        android:layout_below="@id/winery_tasting_room_wrapper"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"/>
+
+        <TextView
+            style="@style/WhiteText"
+            android:id="@+id/winery_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLAHBLAHBLAH"/>
+
+    </LinearLayout>
+
+</merge>

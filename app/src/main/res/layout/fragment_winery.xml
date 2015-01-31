@@ -4,40 +4,27 @@
              android:layout_height="match_parent">
 
     <ImageView
-            android:id="@+id/winery_photo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"/>
+        android:id="@+id/winery_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
-    <ScrollView android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            
-            <View
-                    android:id="@+id/winery_spacer"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-            <TextView
-                    style="@style/WhiteText"
-                    android:id="@+id/winery_driving_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/winery_spacer"
-                    android:textSize="30dp"
-                    android:text="15 min drive"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <TextView
-                    style="@style/WhiteText"
-                    android:id="@+id/winery_distance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@id/winery_driving_time"
-                    android:textSize="40dp"
-                    android:text="10.3 km"/>
+            <View
+                android:id="@+id/winery_spacer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/view_winery"/>
+
         </RelativeLayout>
     </ScrollView>
 </FrameLayout>
