@@ -16,7 +16,19 @@ public class WineryDetails {
 	private WineryHours hours;
 	private String contact;
 
-	public String getTourString(){
+    public String getOverview() {
+        return overview;
+    }
+
+    public String getTourString(){
 		return tours;
 	}
+
+    public String getContact() {
+        return contact;
+    }
+
+    public String getHourString(){
+        return hours.getHourString();
+    }
 }
