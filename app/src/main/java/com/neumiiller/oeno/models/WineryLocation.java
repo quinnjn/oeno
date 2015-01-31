@@ -118,4 +118,8 @@ public class WineryLocation implements Parcelable {
             return new WineryLocation[size];
         }
     };
+
+    public String getTelephone() {
+        return telephone;
+    }
 }
