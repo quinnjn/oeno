@@ -3,7 +3,6 @@ package com.neumiiller.oeno.models;
 import android.location.Location;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.text.TextUtils;
 
 /**
  * @author QJN on 2014-09-15.
@@ -13,11 +12,11 @@ public class Winery implements Parcelable {
     private WineryLocation location;
     private WineryMeta meta;
 
-    public boolean shouldShowLocation(){
+    public boolean shouldShowLocation() {
         return location.isLocationUpdated();
     }
 
-    private WineryLocation getWineryLocation(){
+    private WineryLocation getWineryLocation() {
         return location;
     }
 
@@ -37,18 +36,35 @@ public class Winery implements Parcelable {
         return location.getAddress();
     }
 
+    public String getTelephone() {
+        String rawTelephone = location.getTelephone();
+
+        StringBuilder builder = new StringBuilder()
+                .append(1)
+                .append(" ")
+                .append("(")
+                .append(rawTelephone, 0, 3)
+                .append(")")
+                .append(" ")
+                .append(rawTelephone, 3, 6)
+                .append("-")
+                .append(rawTelephone, 6, 10);
+
+        return builder.toString();
+    }
+
     public String getName() {
-        if(name == null){
+        if (name == null) {
             name = "";
         }
         return name;
     }
 
-    public void setMeta(WineryMeta meta){
+    public void setMeta(WineryMeta meta) {
         this.meta = meta;
     }
 
-    public WineryMeta getMeta(){
+    public WineryMeta getMeta() {
         return this.meta;
     }
 
