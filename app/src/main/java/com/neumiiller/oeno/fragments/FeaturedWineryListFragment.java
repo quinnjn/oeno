@@ -46,4 +46,15 @@ public class FeaturedWineryListFragment extends WineryListFragment {
     @Override protected String getTitle() {
         return "Featured";
     }
+
+    @Override protected void initializeViews() {
+        super.initializeViews();
+        viewMapButton.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        mapMenuButton.setVisible(false);
+    }
 }

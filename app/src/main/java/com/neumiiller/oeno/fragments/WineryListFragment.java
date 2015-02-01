@@ -47,6 +47,10 @@ import java.util.List;
  */
 public abstract class WineryListFragment extends BaseFragment {
 
+    private ListView listView;
+    protected Button viewMapButton;
+    protected MenuItem mapMenuButton;
+
     public interface WineryListFragmentListener {
         public void onViewMapButtonClick();
         public void onWineryClick(Winery winery);
@@ -85,7 +89,7 @@ public abstract class WineryListFragment extends BaseFragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.winerylist, menu);
-        MenuItem mapMenuButton = menu.findItem(R.id.menu_winerylist_map);
+        mapMenuButton = menu.findItem(R.id.menu_winerylist_map);
         mapMenuButton.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -99,8 +103,14 @@ public abstract class WineryListFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_winery_list, null);
-        ListView listView = (ListView) view.findViewById(R.id.winery_list);
-        Button viewMapButton = (Button) view.findViewById(R.id.view_wineries_button);
+        listView = (ListView) view.findViewById(R.id.winery_list);
+        viewMapButton = (Button) view.findViewById(R.id.view_wineries_button);
+
+        initializeViews();
+        return view;
+    }
+
+    protected void initializeViews(){
         listView.setAdapter(listAdapter);
         viewMapButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,7 +125,6 @@ public abstract class WineryListFragment extends BaseFragment {
                 wineryListFragmentListener.onWineryClick(winery);
             }
         });
-        return view;
     }
 
     private void mapButtonClicked() {
