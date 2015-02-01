@@ -20,6 +20,6 @@ public class PromotionsFragment extends BaseFragment {
     }
 
     @Override protected String getTitle() {
-        return "Promotions";
+        return "Pronto Promos";
     }
 }
