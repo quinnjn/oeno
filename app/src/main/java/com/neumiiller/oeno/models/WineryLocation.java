@@ -122,4 +122,12 @@ public class WineryLocation implements Parcelable {
     public String getTelephone() {
         return telephone;
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
 }

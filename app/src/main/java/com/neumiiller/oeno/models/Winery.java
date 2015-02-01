@@ -36,6 +36,10 @@ public class Winery implements Parcelable {
         return location.getAddress();
     }
 
+    public WineryLocation getLocation(){
+        return location;
+    }
+
     public String getTelephone() {
         String rawTelephone = location.getTelephone();
 
