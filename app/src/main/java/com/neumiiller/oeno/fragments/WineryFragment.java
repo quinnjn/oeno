@@ -98,11 +98,11 @@ public class WineryFragment extends BaseFragment {
                 scrollView.smoothScrollTo(0, view.getBottom());
             }
         });
-//        wineryPhoto.setImageBitmap(
-//                OenoApplication.getInstance()
-//                        .getWineryManager()
-//                        .getWineryFullPicture(context, winery)
-//        );
+        wineryPhoto.setImageBitmap(
+                OenoApplication.getInstance()
+                        .getWineryManager()
+                        .getWineryFullPicture(context, winery)
+        );
     }
 
     private void initializeWinerySpacer() {
