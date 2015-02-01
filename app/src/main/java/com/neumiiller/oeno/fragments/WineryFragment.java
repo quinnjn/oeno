@@ -79,8 +79,6 @@ public class WineryFragment extends BaseFragment {
     private void connectViews(View view) {
         wineryPhoto = (ImageView) view.findViewById(R.id.winery_photo);
         winerySpacer = view.findViewById(R.id.winery_spacer);
-        wineryDrivingTime = (TextView) view.findViewById(R.id.winery_driving_time);
-        wineryDistance = (TextView) view.findViewById(R.id.winery_distance);
 
         wineryDetails = (TextView) view.findViewById(R.id.winery_details);
         wineryTours = (TextView) view.findViewById(R.id.winery_tours);

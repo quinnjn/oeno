@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        style="@style/WhiteText"
-        android:id="@+id/winery_driving_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/winery_spacer"
-        android:textSize="30dp"
-        android:text="15 min drive"/>
-
-    <TextView
-        style="@style/WhiteText"
-        android:id="@+id/winery_distance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/winery_driving_time"
-        android:textSize="40dp"
-        android:text="10.3 km"/>
-
     <LinearLayout
         android:id="@+id/winery_details_wrapper"
-        android:layout_below="@id/winery_driving_time"
         android:layout_width="match_parent"
+        android:layout_below="@id/winery_spacer"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
