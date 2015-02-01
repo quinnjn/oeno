@@ -2,11 +2,16 @@ package com.neumiiller.oeno.fragments;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -17,6 +22,8 @@ import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.models.Winery;
 import com.neumiiller.oeno.models.WineryDetails;
+
+import java.util.Locale;
 
 /**
  * @author QJN on 2014-09-27.
@@ -57,6 +64,7 @@ public class WineryFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
         loadArguments(getArguments());
     }
 
@@ -65,6 +73,16 @@ public class WineryFragment extends BaseFragment {
     }
 
 
+    @Override public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.winery_details, menu);
+        menu.findItem(R.id.map).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override public boolean onMenuItemClick(MenuItem menuItem) {
+                openWineryInMaps();
+                return true;
+            }
+        });
+        super.onCreateOptionsMenu(menu, inflater);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -148,5 +166,26 @@ public class WineryFragment extends BaseFragment {
             result = getResources().getDimensionPixelSize(resourceId);
         }
         return result;
+    }
+
+
+
+    private void openWineryInMaps(){
+        double latitude = winery.getLocation().getLatitude();
+        double longitude = winery.getLocation().getLongitude();
+
+        String uri = String.format(
+                Locale.ENGLISH,
+                "geo:%f,%f",
+                latitude,
+                longitude
+        );
+
+        Intent intent = new Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse(uri)
+        );
+
+        getActivity().startActivity(intent);
     }
 }
