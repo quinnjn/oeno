@@ -173,9 +173,7 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         transaction.setCustomAnimations(
-                R.anim.slide_in_left,
-                R.anim.slide_out_right,
-                R.anim.slide_in_left,
+                0,
                 R.anim.slide_out_right
         );
         transaction.replace(
