@@ -6,8 +6,7 @@
     </style>
 
     <!-- ActionBar styles -->
-    <style name="MyActionBar"
-           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/primary</item>
     </style>
 
@@ -17,6 +16,15 @@
 
     <style name="DrawerLayout" parent="@android:style/Widget.AbsListView">
         <item name="android:background">@android:color/white</item>
+    </style>
 
-     </style>
+    <style name="WineryWrapper">
+        <item name="android:background">#CC3B3A3A</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="WineryDetailTitle" parent="@style/WhiteText">
+        <item name="android:textSize">20dp</item>
+    </style>
 </resources>

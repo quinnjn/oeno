@@ -2,17 +2,26 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
+        style="@style/WineryWrapper"
         android:id="@+id/winery_details_wrapper"
         android:layout_width="match_parent"
+        android:layout_margin="8dp"
         android:layout_below="@id/winery_spacer"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/WhiteText"
+            style="@style/WineryDetailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Details"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"/>
 
         <TextView
             style="@style/WhiteText"
@@ -25,17 +34,26 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/WineryWrapper"
+        android:layout_margin="8dp"
         android:id="@+id/winery_tours_wrapper"
         android:layout_below="@id/winery_details_wrapper"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/WhiteText"
+            style="@style/WineryDetailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tours"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"/>
 
         <TextView
             style="@style/WhiteText"
@@ -47,17 +65,26 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/WineryWrapper"
+        android:layout_margin="8dp"
         android:id="@+id/winery_tasting_room_wrapper"
         android:layout_below="@id/winery_tours_wrapper"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/WhiteText"
+            style="@style/WineryDetailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tasting Room Hours"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"/>
 
         <TextView
             style="@style/WhiteText"
@@ -69,17 +96,26 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/WineryWrapper"
+        android:layout_margin="8dp"
         android:id="@+id/winery_contact_wrapper"
         android:layout_below="@id/winery_tasting_room_wrapper"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/WhiteText"
+            style="@style/WineryDetailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"/>
 
         <TextView
             style="@style/WhiteText"
