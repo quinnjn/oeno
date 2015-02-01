@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.neumiiller.oeno.OenoApplication;
@@ -22,11 +23,13 @@ import com.neumiiller.oeno.models.WineryDetails;
  */
 public class WineryFragment extends BaseFragment {
     private Winery winery;
+    private ScrollView scrollView;
 
     private ImageView wineryPhoto;
     private View winerySpacer;
     private TextView wineryDrivingTime;
     private TextView wineryDistance;
+    private View downIndicator;
 
     private TextView wineryDetails;
     private TextView wineryTours;
@@ -77,8 +80,10 @@ public class WineryFragment extends BaseFragment {
     }
 
     private void connectViews(View view) {
+        scrollView = (ScrollView)view.findViewById(R.id.scroll_view);
         wineryPhoto = (ImageView) view.findViewById(R.id.winery_photo);
         winerySpacer = view.findViewById(R.id.winery_spacer);
+        downIndicator = view.findViewById(R.id.down_indicator);
 
         wineryDetails = (TextView) view.findViewById(R.id.winery_details);
         wineryTours = (TextView) view.findViewById(R.id.winery_tours);
@@ -88,6 +93,11 @@ public class WineryFragment extends BaseFragment {
 
     private void initializeViews(Context context) {
         initializeWinerySpacer();
+        downIndicator.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                scrollView.smoothScrollTo(0, view.getBottom());
+            }
+        });
 //        wineryPhoto.setImageBitmap(
 //                OenoApplication.getInstance()
 //                        .getWineryManager()
