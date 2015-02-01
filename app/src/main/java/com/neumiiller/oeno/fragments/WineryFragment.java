@@ -47,7 +47,7 @@ public class WineryFragment extends BaseFragment {
         return fragment;
     }
 
-    @Override protected String getSubTitle() {
+    @Override protected String getTitle() {
         return winery.getName();
     }
 

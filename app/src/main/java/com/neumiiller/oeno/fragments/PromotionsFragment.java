@@ -19,7 +19,7 @@ public class PromotionsFragment extends BaseFragment {
         return view;
     }
 
-    @Override protected String getSubTitle() {
+    @Override protected String getTitle() {
         return "Promotions";
     }
 }

@@ -9,7 +9,7 @@ import android.os.Bundle;
  */
 public abstract class BaseFragment extends Fragment {
 
-    protected abstract String getSubTitle();
+    protected abstract String getTitle();
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +18,10 @@ public abstract class BaseFragment extends Fragment {
 
     @Override public void onResume() {
         super.onResume();
-        getActivity().getActionBar()
-                .setSubtitle(getSubTitle());
+        if(getActivity() != null && getActivity().getActionBar() != null) {
+            getActivity().getActionBar()
+                    .setTitle(getTitle());
+        }
     }
 
 }
