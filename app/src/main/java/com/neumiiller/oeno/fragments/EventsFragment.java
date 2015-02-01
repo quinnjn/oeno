@@ -11,7 +11,7 @@ import com.neumiiller.oeno.R;
 /**
  * @author QJN on 2014-10-28.
  */
-public class EventsFragment extends Fragment {
+public class EventsFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -19,4 +19,7 @@ public class EventsFragment extends Fragment {
         return view;
     }
 
+    @Override protected String getSubTitle() {
+        return "Events";
+    }
 }

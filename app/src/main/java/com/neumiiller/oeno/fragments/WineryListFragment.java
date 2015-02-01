@@ -45,7 +45,7 @@ import java.util.List;
 /**
  * @author QJN on 2014-09-15.
  */
-public class WineryListFragment extends Fragment {
+public abstract class WineryListFragment extends BaseFragment {
 
     public interface WineryListFragmentListener {
         public void onViewMapButtonClick();

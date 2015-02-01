@@ -20,7 +20,7 @@ import com.neumiiller.oeno.models.WineryDetails;
 /**
  * @author QJN on 2014-09-27.
  */
-public class WineryFragment extends Fragment {
+public class WineryFragment extends BaseFragment {
     private Winery winery;
 
     private ImageView wineryPhoto;
@@ -47,6 +47,10 @@ public class WineryFragment extends Fragment {
         return fragment;
     }
 
+    @Override protected String getSubTitle() {
+        return winery.getName();
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +60,8 @@ public class WineryFragment extends Fragment {
     public void loadArguments(Bundle args) {
         winery = args.getParcelable(Argument.WINERY);
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

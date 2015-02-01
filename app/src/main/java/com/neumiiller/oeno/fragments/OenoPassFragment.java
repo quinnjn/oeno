@@ -5,6 +5,9 @@ import android.app.Fragment;
 /**
  * @author QJN on 2014-10-28.
  */
-public class OenoPassFragment extends Fragment {
+public class OenoPassFragment extends BaseFragment {
 
+    @Override protected String getSubTitle() {
+        return "oenopass";
+    }
 }

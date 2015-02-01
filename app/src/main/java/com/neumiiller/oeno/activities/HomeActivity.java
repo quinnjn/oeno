@@ -150,7 +150,7 @@ public class HomeActivity extends Activity implements WineryListFragment.WineryL
 
         FragmentManager fragmentManager = getFragmentManager();
         if(fragmentManager.findFragmentByTag("currentFragment") == null) {
-            Fragment fragment = new WineryListFragment();
+            Fragment fragment = new FeaturedWineryListFragment();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.home_fragment_root, fragment, "currentFragment");
             fragmentTransaction.commit();

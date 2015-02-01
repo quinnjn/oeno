@@ -43,4 +43,7 @@ import java.util.List;
  */
 public class FeaturedWineryListFragment extends WineryListFragment {
 
+    @Override protected String getSubTitle() {
+        return "Featured";
+    }
 }
