@@ -5,11 +5,11 @@
                 android:layout_height="wrap_content">
 
     <ImageView
-            android:id="@+id/winery_photo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/placekitten"/>
+        android:id="@+id/winery_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/placekitten"/>
 
     <ImageView
         android:id="@+id/winery_photo_gradient"
@@ -34,46 +34,52 @@
         tools:visibility="visible"/>
 
     <TextView
-            style="@style/WhiteText"
-            android:id="@+id/winery_list_item_city"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Niagara-on-the-Lake"
-            android:layout_alignBottom="@id/winery_photo"/>
+        style="@style/WhiteText"
+        android:id="@+id/winery_list_item_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Niagara-on-the-Lake"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBottom="@id/winery_photo"/>
 
     <TextView
-            style="@style/WhiteText"
-            android:id="@+id/winery_list_item_driving_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="4 min drive"
-            android:layout_alignBottom="@id/winery_photo"
-            android:layout_alignParentRight="true"/>
+        style="@style/WhiteText"
+        android:id="@+id/winery_list_item_driving_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="4 min drive"
+        android:layout_alignBottom="@id/winery_photo"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"/>
 
     <TextView
-            style="@style/WhiteText"
-            android:id="@+id/winery_list_item_distance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="2.0 km"
-            android:textStyle="bold"
-            android:layout_above="@id/winery_list_item_driving_time"
-            android:layout_alignParentRight="true"/>
+        style="@style/WhiteText"
+        android:id="@+id/winery_list_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2.0 km"
+        android:textStyle="bold"
+        android:layout_above="@id/winery_list_item_driving_time"
+        android:layout_alignRight="@id/winery_list_item_driving_time"/>
 
     <TextView
-            style="@style/WhiteText"
-            android:id="@+id/winery_list_item_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="290 John Street East"
-            android:layout_above="@id/winery_list_item_city"/>
+        style="@style/WhiteText"
+        android:id="@+id/winery_list_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/winery_list_item_city"
+        tools:text="290 John Street East"
+        android:layout_above="@id/winery_list_item_city"/>
 
     <TextView
-            style="@style/WhiteText"
-            android:id="@+id/winery_list_item_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Peller Estates"
-            android:textStyle="bold"
-            android:layout_above="@id/winery_list_item_address"/>
+        style="@style/WhiteText"
+        android:id="@+id/winery_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Peller Estates"
+        android:layout_alignLeft="@id/winery_list_item_city"
+        android:textStyle="bold"
+        android:layout_above="@id/winery_list_item_address"/>
 </RelativeLayout>
