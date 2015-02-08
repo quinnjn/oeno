@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -124,18 +125,19 @@ public class WineryFragment extends BaseFragment {
     }
 
     private void initializeWinerySpacer() {
-        Point size = new Point();
-        getActivity().getWindowManager().getDefaultDisplay().getSize(size);
-        int screenHeight = size.y;
+        scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override public void onGlobalLayout() {
+                if(scrollView.getMeasuredHeight() > 0){
+                    scrollView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                    measure();
+                }
+            }
+        });
+    }
 
+    private void measure() {
         ViewGroup.LayoutParams params = winerySpacer.getLayoutParams();
-        params.height = screenHeight;
-        params.height -= getStatusBarHeight();
-//        params.height -= wineryDrivingTime.getMeasuredHeight();
-//        params.height -= wineryDistance.getMeasuredHeight();
-
-        // TODO needs to measure
-
+        params.height = scrollView.getMeasuredHeight() - winerySpacer.getMeasuredHeight();
         winerySpacer.setLayoutParams(params);
     }
 
