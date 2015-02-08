@@ -3,11 +3,11 @@ package com.neumiiller.oeno.fragments;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,13 +16,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.neumiiller.oeno.OenoApplication;
 import com.neumiiller.oeno.R;
 import com.neumiiller.oeno.models.Winery;
 import com.neumiiller.oeno.models.WineryDetails;
+import com.neumiiller.oeno.views.ObservableScrollView;
 
 import java.util.Locale;
 
@@ -31,9 +31,10 @@ import java.util.Locale;
  */
 public class WineryFragment extends BaseFragment {
     private Winery winery;
-    private ScrollView scrollView;
+    private ObservableScrollView scrollView;
 
     private ImageView wineryPhoto;
+    private ImageView wineryBlurPhoto;
     private View winerySpacer;
     private TextView wineryDrivingTime;
     private TextView wineryDistance;
@@ -99,8 +100,9 @@ public class WineryFragment extends BaseFragment {
     }
 
     private void connectViews(View view) {
-        scrollView = (ScrollView)view.findViewById(R.id.scroll_view);
+        scrollView = (ObservableScrollView) view.findViewById(R.id.scroll_view);
         wineryPhoto = (ImageView) view.findViewById(R.id.winery_photo);
+        wineryBlurPhoto = (ImageView) view.findViewById(R.id.winery_blur_photo);
         winerySpacer = view.findViewById(R.id.winery_spacer);
         downIndicator = view.findViewById(R.id.down_indicator);
 
@@ -122,12 +124,24 @@ public class WineryFragment extends BaseFragment {
                         .getWineryManager()
                         .getWineryFullPicture(context, winery)
         );
+        wineryBlurPhoto.setImageBitmap(
+                OenoApplication.getInstance()
+                        .getWineryManager()
+                        .getWineryBlurPicture(context, winery)
+        );
+
+        scrollView.setAction(new ObservableScrollView.Action() {
+            @Override public void onScrollPercentageChanged(float percentage) {
+                Log.d("percentage", "photo:"+percentage+" blur:"+(1-percentage));
+                wineryPhoto.setAlpha(1-percentage);
+            }
+        });
     }
 
     private void initializeWinerySpacer() {
         scrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override public void onGlobalLayout() {
-                if(scrollView.getMeasuredHeight() > 0){
+                if (scrollView.getMeasuredHeight() > 0) {
                     scrollView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     measure();
                 }
@@ -171,8 +185,7 @@ public class WineryFragment extends BaseFragment {
     }
 
 
-
-    private void openWineryInMaps(){
+    private void openWineryInMaps() {
         double latitude = winery.getLocation().getLatitude();
         double longitude = winery.getLocation().getLongitude();
 

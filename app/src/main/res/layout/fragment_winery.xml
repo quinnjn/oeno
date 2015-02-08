@@ -4,6 +4,13 @@
              android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/winery_blur_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
         android:id="@+id/winery_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +30,7 @@
     </RelativeLayout>
 
 
-    <ScrollView
+    <com.neumiiller.oeno.views.ObservableScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -42,5 +49,5 @@
                 layout="@layout/view_winery"/>
 
         </RelativeLayout>
-    </ScrollView>
+    </com.neumiiller.oeno.views.ObservableScrollView>
 </FrameLayout>
