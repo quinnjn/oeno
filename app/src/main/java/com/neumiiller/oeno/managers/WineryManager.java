@@ -81,6 +81,10 @@ public class WineryManager {
         return loadBitmap(context, getWineryImagePath(winery) + "-full.jpg");
     }
 
+    public Bitmap getWineryBlurPicture(Context context, Winery winery){
+        return loadBitmap(context, getWineryImagePath(winery) + "-full-blur.jpg");
+    }
+
     private String getWineryImagePath(Winery winery){
         String wineryName = winery.getName();
 
