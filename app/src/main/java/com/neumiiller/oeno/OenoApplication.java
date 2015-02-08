@@ -6,9 +6,7 @@ import com.neumiiller.oeno.managers.WineryManager;
 public class OenoApplication extends Application {
 	
 	public static OenoApplication singleton; 
-	
-	public static final String DEFAULT_WINERIES_JSON = "wineries.json";
-	
+
 	private WineryManager wineryManager;
 	
 	public static OenoApplication getInstance(){
