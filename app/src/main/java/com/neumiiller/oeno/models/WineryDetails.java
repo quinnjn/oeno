@@ -31,4 +31,8 @@ public class WineryDetails {
     public String getHourString(){
         return hours.getHourString();
     }
+
+    public String getOpenString() {
+        return hours.getOpenString();
+    }
 }

@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,11 +66,15 @@ public abstract class WineryListFragment extends BaseFragment {
         setHasOptionsMenu(true);
     }
 
+    protected WineryListAdapter generateAdapter(Activity activity){
+        return new WineryListAdapter(activity);
+    }
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         setWineryListFragmentListener(activity);        
-        listAdapter = new WineryListAdapter(activity);
+        listAdapter = generateAdapter(activity);
         Location location = getLocation(activity);
         if(location != null) {
             listAdapter.updateLocation(getLocation(activity));

@@ -68,6 +68,13 @@ public class WineryTime {
 
 		return generateHourString();
 	}
+
+    public String getTodayHours(){
+        if(isClosed()){
+            return "Closed";
+        }
+        return "Open till "+new TimeHelper(close).getTimeStamp();
+    }
 	
 	private boolean isClosed(){
 		return close < open;

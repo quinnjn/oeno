@@ -28,6 +28,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
+import com.neumiiller.oeno.adapters.FeaturedWineryListAdapter;
+import com.neumiiller.oeno.adapters.WineryListAdapter;
 import com.neumiiller.oeno.fragments.WineryListFragment;
 
 import java.io.BufferedReader;
@@ -56,5 +58,10 @@ public class FeaturedWineryListFragment extends WineryListFragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         mapMenuButton.setVisible(false);
+    }
+
+    @Override
+    protected WineryListAdapter generateAdapter(Activity activity){
+        return new FeaturedWineryListAdapter(activity);
     }
 }
