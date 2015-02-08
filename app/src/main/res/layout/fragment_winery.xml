@@ -10,6 +10,19 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_gradient"/>
+    </RelativeLayout>
+
+
     <ScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
